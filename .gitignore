@@ -1,0 +1,24 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Node (por si en el futuro)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build output (si en el futuro)
+dist/
+build/
+.netlify/
+
+# Sensibles — nunca commitear
+.env
+.env.local
+.env.production

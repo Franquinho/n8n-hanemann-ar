@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Franco Hanemann — Automatización empresarial con n8n, IA aplicada y desarrollo a medida. Diseñada por veinte años de oficio técnico. Desde Mar del Plata para Argentina, LATAM y export." />
+  <meta name="theme-color" content="#050507" />
+  <title>Franco Hanemann · Automatización empresarial con n8n e IA</title>
+
+  <meta property="og:title" content="Franco Hanemann · Automatización empresarial con n8n e IA" />
+  <meta property="og:description" content="n8n, IA aplicada y desarrollo a medida. Veinte años de oficio antes de prometer un solo workflow." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- agent-chat endpoint (cuando esté listo n8n, descomentar y poner la URL) -->
+  <!-- <meta name="agent-chat-endpoint" content="https://n8n.tu-dominio.com/webhook/agent-chat"> -->
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/chat.css" />
+</head>
+<body>
+
+  <!-- Atmósfera de fondo -->
+  <div class="bg-atmos" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <!-- Cursor custom (solo desktop) -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Section indicator (sidebar mini-nav) -->
+  <nav class="section-indicator" aria-label="Progreso de lectura" aria-hidden="true">
+    <a href="#inicio" data-section="inicio" class="si-dot is-active" title="Inicio"><span></span></a>
+    <a href="#manifiesto" data-section="manifiesto" class="si-dot" title="Cómo trabajo"><span></span></a>
+    <a href="#showcase" data-section="showcase" class="si-dot" title="Workflow"><span></span></a>
+    <a href="#metodo" data-section="metodo" class="si-dot" title="Método"><span></span></a>
+    <a href="#stack" data-section="stack" class="si-dot" title="Stack"><span></span></a>
+    <a href="#trabajo" data-section="trabajo" class="si-dot" title="Trayectoria"><span></span></a>
+    <a href="#faqs" data-section="faqs" class="si-dot" title="FAQ"><span></span></a>
+    <a href="#contacto" data-section="contacto" class="si-dot" title="Conversemos"><span></span></a>
+  </nav>
+
+  <!-- =================== TOP BAR =================== -->
+  <header class="top">
+    <div class="wrap nav">
+      <a class="brand" href="#inicio">
+        <img class="brand-mark" src="assets/logo-mark.svg" alt="" onerror="this.src='assets/logo-icon.svg'" />
+        <span>Hanemann</span>
+      </a>
+      <nav class="links" aria-label="Principal">
+        <a href="#manifiesto">Cómo trabajo</a>
+        <a href="#showcase">Workflow</a>
+        <a href="#metodo">Método</a>
+        <a href="#stack">Stack</a>
+        <a href="#trabajo">Trayectoria</a>
+        <a href="#faqs">FAQ</a>
+        <a class="btn btn-main" href="#contacto">
+          Conversemos
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =================== HERO =================== -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero-narrative">
+
+        <div class="hero-top">
+          <span class="kicker">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            n8n · IA aplicada · Desarrollo a medida
+          </span>
+          <div class="hero-turbina-side" aria-hidden="true">
+            <canvas id="hero-turbina" class="hero-canvas" width="200" height="200"></canvas>
+          </div>
+        </div>
+
+        <h1 id="hero-title" class="hero-h1">
+          <span class="h1-line">Automatización</span>
+          <span class="h1-line h1-serif">empresarial</span>
+          <span class="h1-line">que <em class="h1-em">integra</em>,</span>
+          <span class="h1-line">no que <em class="h1-em">improvisa</em>.</span>
+        </h1>
+
+        <div class="hero-bottom">
+          <div class="hero-bottom-text">
+            <p class="hero-lead">
+              Veinte años con sistemas, antes de prometer un solo workflow. Diseño automatizaciones con <strong>n8n</strong> y agentes de <strong>IA</strong> que tu equipo puede operar — con la gobernanza que pide el manejo de credenciales y la solidez del software contenedor.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-main" href="#contacto">
+                Conversemos
+                <span class="arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-ghost" href="#manifiesto">Cómo trabajo</a>
+              <button type="button" class="btn btn-bot" data-open-chat aria-label="Abrir chat con el agente">
+                <span class="bot-dot" aria-hidden="true"></span>
+                Hablá con nuestro bot
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-row">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">años de oficio técnico</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-num">n8n</span>
+              <span class="stat-label">Basic + Advanced oficial</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-num">2026</span>
+              <span class="stat-label">charlas públicas activas</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- =================== MANIFIESTO — 7 PRINCIPIOS =================== -->
+    <section class="section section--manifiesto" id="manifiesto">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Cómo trabajo</span>
+          <h2>Algunas cosas que aprendí dando charlas y trabajando con n8n.</h2>
+          <p class="sub">No es una declaración de principios. Son convicciones que veinte años en el rubro me han llevado a aclarar, para ofrecerte un servicio más cristalino.</p>
+        </div>
+
+        <ol class="manifesto reveal-stagger">
+
+          <li class="principle">
+            <span class="principle-num">01</span>
+            <h3>El diagnóstico es el trabajo.</h3>
+            <p>Antes de empezar, hacemos un mapeo de qué proceso vas a automatizar y por qué. Acá es donde se descubre si el problema que pensabas tener es realmente el problema que tenés.</p>
+          </li>
+
+          <li class="principle">
+            <span class="principle-num">02</span>
+            <h3>Si no se puede escribir, no se puede ejecutar.</h3>
+            <p>Escribimos la especificación antes de construir. El proceso se interpreta entre las partes y se lleva a un diagrama de decisiones donde queda explícito el flujo, las ramas y las excepciones. Si no se puede dibujar, no se puede programar.</p>
+          </li>
+
+          <li class="principle">
+            <span class="principle-num">03</span>
+            <h3>La herramienta sale del problema, no al revés.</h3>
+            <p>n8n, código propio, IA, sistemas legacy o una combinación: lo decide la especificación, no la moda del momento. La herramienta es consecuencia técnica, no punto de partida.</p>
+          </li>
+
+          <li class="principle">
+            <span class="principle-num">04</span>
+            <h3>La IA es un nodo con límites que nos permiten gobernar el proceso.</h3>
+            <p>Cualquier agente IA que diseño tiene boundaries declarados, fallback, logging y dueño asignado. Sin esos cuatro elementos, un agente no es una solución: es una vulnerabilidad que expone credenciales, datos y decisiones sin trazabilidad.</p>
+          </li>
+
+          <li class="principle">
+            <span class="principle-num">05</span>
+            <h3>Lo que se diseña para resistir, dura.</h3>
+            <p>El error no es la excepción, es parte del comportamiento normal de cualquier sistema en producción. Lo que entrego está pensado para seguir funcionando cuando algo sale como no esperábamos.</p>
+          </li>
+
+          <li class="principle">
+            <span class="principle-num">06</span>
+            <h3>Independencia, no dependencia.</h3>
+            <p>Lo que diseño te queda en tu infraestructura, con documentación que tu equipo puede leer y operar. Si mañana querés cambiar de proveedor o internalizarlo, podés.</p>
+          </li>
+
+          <li class="principle">
+            <span class="principle-num">07</span>
+            <h3>La documentación y la observabilidad son parte del entregable.</h3>
+            <p>Diagramas legibles, naming consistente, decisiones explicadas, logs y métricas. Todo entra en el precio del proyecto. Lo que no se documenta, no existe.</p>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- =================== BRIDGE =================== -->
+    <section class="section section--bridge">
+      <div class="wrap">
+        <blockquote class="bridge-quote reveal">
+          <p>Hay procesos que necesitan automatización, y hay procesos que primero necesitan claridad. Distinguirlos a tiempo es lo que diferencia un proyecto que sostiene resultados de uno que solo los promete.</p>
+          <p class="bridge-quote-foot">Esa es la conversación que abrimos en la primera etapa, antes de tocar una sola herramienta.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- =================== SHOWCASE — Workflow animado al scroll =================== -->
+    <section class="section section--showcase" id="showcase" aria-label="Cómo se ve un workflow">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Cómo se ve un workflow</span>
+          <h2>Esto es lo que entrego. No un PDF con promesas.</h2>
+          <p class="sub">Un workflow n8n real, con sus etapas, sus controles y sus puntos de decisión. Mirá cómo se conecta cada paso.</p>
+        </div>
+
+        <div class="workflow-canvas" aria-hidden="true">
+          <svg viewBox="0 0 1200 540" preserveAspectRatio="xMidYMid meet" class="workflow-svg">
+            <!-- Definiciones: gradientes y filtros -->
+            <defs>
+              <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#d92132" stop-opacity="0.9"/>
+              </linearGradient>
+              <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="rgba(255,255,255,0.08)"/>
+                <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+              </linearGradient>
+              <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="6" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- LAYOUT:
+                 Fila 1 (y=80):   [Trigger 60-220] → [Validación 350-530] → [Agente IA 720-900]
+                 Fila 2 (y=300):  [Observabilidad 60-240]   [Sistema 720-900]
+                 Fila 3 (y=440):  [Notificación 350-530]
+            -->
+
+            <!-- Líneas que conectan los nodos -->
+            <!-- Línea 1: Trigger → Validación (fila 1, horizontal) -->
+            <path class="wf-line wf-line-1" d="M 220 120 C 280 120, 290 120, 350 120" stroke="url(#lineGrad)" stroke-width="2" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+            <!-- Línea 2: Validación → Agente IA (fila 1, horizontal) -->
+            <path class="wf-line wf-line-2" d="M 530 120 C 620 120, 630 120, 720 120" stroke="url(#lineGrad)" stroke-width="2" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+            <!-- Línea 3: Agente IA → Sistema Legacy (baja en vertical curvada) -->
+            <path class="wf-line wf-line-3" d="M 810 160 C 810 220, 810 260, 810 300" stroke="url(#lineGrad)" stroke-width="2" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+            <!-- Línea 4: Sistema → Observabilidad (cruza horizontal a la izquierda) -->
+            <path class="wf-line wf-line-4" d="M 720 340 C 540 340, 420 340, 240 340" stroke="url(#lineGrad)" stroke-width="2" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+            <!-- Línea 5: Observabilidad → Notificación (baja en curva) -->
+            <path class="wf-line wf-line-5" d="M 150 380 C 150 410, 200 440, 350 460" stroke="url(#lineGrad)" stroke-width="2" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+
+            <!-- Nodo 1: Trigger (fila 1, izq) -->
+            <g class="wf-node wf-node-1" transform="translate(60, 80)">
+              <rect width="160" height="90" rx="14" fill="url(#nodeGrad)" stroke="rgba(34,211,238,0.45)" stroke-width="1.5"/>
+              <circle cx="22" cy="44" r="6" fill="#22d3ee" filter="url(#nodeGlow)"/>
+              <text x="42" y="34" fill="#67e8f9" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.5">TRIGGER</text>
+              <text x="42" y="56" fill="#e9e8e3" font-family="Inter Tight, sans-serif" font-weight="600" font-size="14">Webhook</text>
+              <text x="42" y="74" fill="#a0a09c" font-family="Inter Tight, sans-serif" font-size="11">Recibe el evento</text>
+            </g>
+
+            <!-- Nodo 2: Validación (fila 1, centro) -->
+            <g class="wf-node wf-node-2" transform="translate(350, 80)">
+              <rect width="180" height="90" rx="14" fill="url(#nodeGrad)" stroke="rgba(217,33,50,0.45)" stroke-width="1.5"/>
+              <circle cx="22" cy="44" r="6" fill="#d92132" filter="url(#nodeGlow)"/>
+              <text x="42" y="34" fill="#ff5060" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.5">VALIDACIÓN</text>
+              <text x="42" y="56" fill="#e9e8e3" font-family="Inter Tight, sans-serif" font-weight="600" font-size="14">Schema + Auth</text>
+              <text x="42" y="74" fill="#a0a09c" font-family="Inter Tight, sans-serif" font-size="11">Contrato declarado</text>
+            </g>
+
+            <!-- Nodo 3: Agente IA (fila 1, derecha) -->
+            <g class="wf-node wf-node-3" transform="translate(720, 80)">
+              <rect width="180" height="90" rx="14" fill="url(#nodeGrad)" stroke="rgba(217,33,50,0.55)" stroke-width="1.5"/>
+              <circle cx="22" cy="44" r="6" fill="#d92132" filter="url(#nodeGlow)"/>
+              <text x="42" y="34" fill="#ff5060" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.5">AGENTE IA</text>
+              <text x="42" y="56" fill="#e9e8e3" font-family="Inter Tight, sans-serif" font-weight="600" font-size="14">Con boundaries</text>
+              <text x="42" y="74" fill="#a0a09c" font-family="Inter Tight, sans-serif" font-size="11">Fallback + logging</text>
+            </g>
+
+            <!-- Nodo 4: Sistema Legacy (fila 2, derecha) -->
+            <g class="wf-node wf-node-4" transform="translate(720, 300)">
+              <rect width="180" height="90" rx="14" fill="url(#nodeGrad)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+              <circle cx="22" cy="44" r="6" fill="#a0a09c" filter="url(#nodeGlow)"/>
+              <text x="42" y="34" fill="#c8c8c4" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.5">SISTEMA</text>
+              <text x="42" y="56" fill="#e9e8e3" font-family="Inter Tight, sans-serif" font-weight="600" font-size="14">ERP / Legacy</text>
+              <text x="42" y="74" fill="#a0a09c" font-family="Inter Tight, sans-serif" font-size="11">SQL · API · queue</text>
+            </g>
+
+            <!-- Nodo 5: Observabilidad (fila 2, izquierda) -->
+            <g class="wf-node wf-node-5" transform="translate(60, 300)">
+              <rect width="180" height="90" rx="14" fill="url(#nodeGrad)" stroke="rgba(34,211,238,0.40)" stroke-width="1.5"/>
+              <circle cx="22" cy="44" r="6" fill="#22d3ee" filter="url(#nodeGlow)"/>
+              <text x="42" y="34" fill="#67e8f9" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.5">OBSERVABILIDAD</text>
+              <text x="42" y="56" fill="#e9e8e3" font-family="Inter Tight, sans-serif" font-weight="600" font-size="14">Logs + métricas</text>
+              <text x="42" y="74" fill="#a0a09c" font-family="Inter Tight, sans-serif" font-size="11">Trazabilidad total</text>
+            </g>
+
+            <!-- Nodo 6: Notificación (fila 3, centro) -->
+            <g class="wf-node wf-node-6" transform="translate(350, 430)">
+              <rect width="180" height="80" rx="14" fill="url(#nodeGrad)" stroke="rgba(34,211,238,0.40)" stroke-width="1.5"/>
+              <circle cx="22" cy="40" r="6" fill="#22d3ee" filter="url(#nodeGlow)"/>
+              <text x="42" y="30" fill="#67e8f9" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.5">NOTIFICACIÓN</text>
+              <text x="42" y="52" fill="#e9e8e3" font-family="Inter Tight, sans-serif" font-weight="600" font-size="14">Slack · Email · DB</text>
+            </g>
+          </svg>
+
+          <!-- Cards textuales con captions sincronizados -->
+          <div class="workflow-captions">
+            <div class="wf-cap wf-cap-1">
+              <span class="wf-cap-tag">01</span>
+              <p>Trigger limpio con esquema declarado: nadie entra al sistema sin pasar contrato.</p>
+            </div>
+            <div class="wf-cap wf-cap-2">
+              <span class="wf-cap-tag">02</span>
+              <p>Agente IA con límites — no decide solo, decide dentro de reglas que vos auditás.</p>
+            </div>
+            <div class="wf-cap wf-cap-3">
+              <span class="wf-cap-tag">03</span>
+              <p>Integración con tu legacy sin reescribirlo: lo que ya funciona, sigue funcionando.</p>
+            </div>
+            <div class="wf-cap wf-cap-4">
+              <span class="wf-cap-tag">04</span>
+              <p>Observabilidad y logging desde el día uno: si se rompe, sabés exactamente dónde.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================== MÉTODO =================== -->
+    <section class="section section--tint" id="metodo">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Método</span>
+          <h2>Cuatro fases. Cada una con entregable firmado.</h2>
+          <p class="sub">No me gustan los <em>"free audit"</em> que se estiran hasta el infinito ni los descubrimientos eternos. Cada fase tiene duración, entregable y criterio para terminar. Si no querés seguir después de una fase, no seguís. Lo que se hizo hasta ahí es tuyo.</p>
+        </div>
+
+        <div class="phases reveal-stagger">
+
+          <article class="phase">
+            <header class="phase-head">
+              <span class="phase-num">Fase 01</span>
+              <span class="phase-tag">2 a 3 semanas</span>
+            </header>
+            <h3>Diagnóstico</h3>
+            <p>Mapeo el proceso real, no el que figura en el manual. Inventario de sistemas, datos, integraciones y todo lo que pueda romperse. Identifico dónde la automatización tiene retorno y dónde no — porque a veces no lo tiene, y conviene saberlo antes.</p>
+            <p class="phase-deliverable"><b>Entregable:</b> documento con hallazgos, oportunidades priorizadas y, si aplica, la recomendación honesta de no automatizar.</p>
+          </article>
+
+          <article class="phase">
+            <header class="phase-head">
+              <span class="phase-num">Fase 02</span>
+              <span class="phase-tag">3 a 6 semanas</span>
+            </header>
+            <h3>Diseño</h3>
+            <p>Acá decidimos arquitectura. Dónde corre, con qué herramientas, con qué controles. Diagramas, contratos entre sistemas, modelo de errores, criterios de observabilidad. Cuando salimos de esta fase, otra persona podría implementarlo siguiendo el blueprint.</p>
+            <p class="phase-deliverable"><b>Entregable:</b> blueprint técnico que tu equipo — o cualquier otro proveedor — puede tomar y ejecutar.</p>
+          </article>
+
+          <article class="phase">
+            <header class="phase-head">
+              <span class="phase-num">Fase 03</span>
+              <span class="phase-tag">según diseño</span>
+            </header>
+            <h3>Construcción</h3>
+            <p>Implementación con n8n, código propio o las dos cosas. Yo lidero arquitectura y revisión técnica; si el volumen pide más manos, sumo equipo de confianza pero con total transparencia hacia vos. Entornos separados, despliegue gradual, rollback configurado.</p>
+            <p class="phase-deliverable"><b>Entregable:</b> sistema en producción con su documentación operativa.</p>
+          </article>
+
+          <article class="phase">
+            <header class="phase-head">
+              <span class="phase-num">Fase 04</span>
+              <span class="phase-tag">opcional · mensual</span>
+            </header>
+            <h3>Gobernanza</h3>
+            <p>Acompañamiento posterior. Métricas, costos, evolución del sistema, capacitación interna, ajustes. Si tu equipo ya puede operar solo, esta fase no existe — y eso es exactamente lo que busco.</p>
+            <p class="phase-deliverable"><b>Entregable:</b> reporte mensual y disponibilidad acordada por escrito.</p>
+          </article>
+
+        </div>
+
+        <!-- Garantías -->
+        <div class="guarantees reveal-stagger">
+          <div class="guarantee">
+            <div class="guarantee-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3l8 4v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V7l8-4z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h4>Sin lock-in</h4>
+            <p>Lo que diseño te queda documentado, comentado y entregado en formatos abiertos. Podés levantarlo en el VPS que vos elijas, o entregárselo a tu equipo técnico para que lo opere. Sin licencias propietarias y sin pedirme permiso.</p>
+          </div>
+
+          <div class="guarantee">
+            <div class="guarantee-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 12a8 8 0 0114-5.3L21 4M21 4v6h-6"/>
+                <path d="M20 12a8 8 0 01-14 5.3L3 20M3 20v-6h6"/>
+              </svg>
+            </div>
+            <h4>Cobertura de tres meses</h4>
+            <p>Si en los primeros tres meses aparece un error que tiene origen en decisiones de arquitectura mías, lo corrijo dentro del marco del contrato sin costo adicional. No incluye cambios de alcance ni nuevos requerimientos: solo lo que dejé yo y no funcionó como debía. Aplica mientras el servicio de mantenimiento esté vigente.</p>
+          </div>
+
+          <div class="guarantee">
+            <div class="guarantee-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h4>Honestidad por sobre venta</h4>
+            <p>No todos los casos se resuelven con n8n, y no todos los problemas se resuelven con automatización. Si tu caso se resuelve mejor con otra tecnología, o directamente con un cambio interno de proceso, te lo voy a decir antes de firmar nada.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================== STACK =================== -->
+    <!-- =================== STACK =================== -->
+    <section class="section section--tint-cyan" id="stack">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Stack</span>
+          <h2>Las piezas que orquesto.</h2>
+          <p class="sub">Las herramientas que orquesto, agrupadas por función. n8n es donde paso la mayor parte del tiempo, pero la decisión de qué tecnología usar siempre sale del problema, no de la moda. Cada pieza está acá porque ya la usé en producción.</p>
+        </div>
+
+        <div class="stack-groups reveal-stagger">
+
+          <div class="stack-group">
+            <h4>Automatización & IA</h4>
+            <ul>
+              <li>n8n <span class="badge-cert">Basic + Advanced</span></li>
+              <li>OpenAI · Anthropic Claude</li>
+              <li>LangChain · Vector stores</li>
+              <li>Webhooks · OAuth flows</li>
+            </ul>
+          </div>
+
+          <div class="stack-group">
+            <h4>Desarrollo</h4>
+            <ul>
+              <li>.NET · .NET Core · C# · VB.NET</li>
+              <li>TypeScript · React · Angular</li>
+              <li>Python · Node.js</li>
+              <li>APIs REST · Entity Framework</li>
+            </ul>
+          </div>
+
+          <div class="stack-group">
+            <h4>Datos</h4>
+            <ul>
+              <li>SQL Server · PostgreSQL · MySQL</li>
+              <li>ElasticSearch <span class="badge-cert">formación 2025</span></li>
+              <li>Modelado de eventos</li>
+              <li>Esquemas y contratos</li>
+            </ul>
+          </div>
+
+          <div class="stack-group">
+            <h4>Operaciones</h4>
+            <ul>
+              <li>Docker · VPS self-hosted</li>
+              <li>HashiCorp <span class="badge-cert">formación 2025</span></li>
+              <li>GA4 · Logging estructurado</li>
+              <li>CI/CD · Observabilidad</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== TRABAJO / TRAYECTORIA =================== -->
+    <section class="section" id="trabajo">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Trayectoria</span>
+          <h2>Veinte años en sistemas. Esto es lo que hice.</h2>
+          <p class="sub">Mi camino con n8n empezó hace menos de un año, pero llegué con dos décadas trabajando en infraestructura crítica, ERPs en producción y desarrollo full stack. Cuatro etapas, cuatro contextos distintos, cada uno enseña algo distinto sobre cómo se diseñan, se rompen y se sostienen los sistemas — y eso es lo que traigo a cada proyecto.</p>
+          <p class="sub">Esa experiencia es lo que me permite distinguir, antes de empezar, qué se va a sostener y qué no.</p>
+        </div>
+
+        <ol class="timeline reveal-stagger">
+
+          <li class="timeline-item">
+            <div class="timeline-head">
+              <span class="timeline-year">2024 — hoy</span>
+              <span class="timeline-role">Full Stack Senior · n8n Developer</span>
+            </div>
+            <h4>Agnostic</h4>
+            <p>Proyectos enterprise. Implementación de Google Analytics 4 para un cliente del sector financiero regulado, lambdas en Python, TypeScript para feature toggles, integración con servicios externos.</p>
+            <p>Desde junio de 2025 sumé el rol de <strong>n8n Developer Advance</strong> con las certificaciones oficiales de la plataforma. Lo que vengo haciendo ahí: chatbots, automatizaciones con IA, flujos corporativos contra bases de datos y respuestas automáticas con gestión de errores y reportes.</p>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-head">
+              <span class="timeline-year">2022 — 2024</span>
+              <span class="timeline-role">Full Stack</span>
+            </div>
+            <h4>Oversoft</h4>
+            <p>Salto formal a desarrollo full stack. .NET Core, Angular, React, SQL Server, Entity Framework, APIs REST. Acá pasé de programar dentro de un ERP a construir software desde cero.</p>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-head">
+              <span class="timeline-year">2010 — 2022</span>
+              <span class="timeline-role">Soporte → Programador</span>
+            </div>
+            <h4>Sistemas Bejerman · Thomson Reuters</h4>
+            <p>La etapa larga, la que me formó. Empecé atendiendo problemas reales en clientes con ERP en producción y terminé desarrollando módulos del propio ERP en .NET, .NET Core, VB6 y SQL Server. Doce años cara a cara con cómo se rompen los sistemas y cómo se reparan — y eso, sinceramente, no se aprende en un curso.</p>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-head">
+              <span class="timeline-year">2009 — 2010</span>
+              <span class="timeline-role">Soporte técnico de plataforma</span>
+            </div>
+            <h4>Rollpix</h4>
+            <p>Soporte técnico de la plataforma e-commerce de Rollpix, empresa marplatense de tecnología que ya operaba en varios países de Latinoamérica y España. Atención a tiendas online en producción: incidencias, configuración, integración con sistemas de pago y logística.</p>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-head">
+              <span class="timeline-year">~2005 — 2009</span>
+              <span class="timeline-role">IT Assistant</span>
+            </div>
+            <h4>Sheraton Mar del Plata Hotel</h4>
+            <p>Cuatro años y medio asistiendo en la operación tecnológica de un hotel cinco estrellas: red, sistemas de reservas, facturación. Pero la parte más exigente del trabajo eran los eventos corporativos. Convenciones de IBM, congresos médicos internacionales, lanzamientos empresariales: cada uno con su configuración técnica propia, audiencias esperando que todo funcione y cero margen para correr los tiempos. Si fallaba el audio, la proyección, la red o el streaming, la solución era en vivo.</p>
+          </li>
+
+        </ol>
+
+        <!-- Charlas + Comunidad -->
+        <div class="speaking reveal">
+          <div class="speaking-head">
+            <span class="creds-label">Charlas y comunidad</span>
+          </div>
+          <p>Doy charlas públicas y presenciales sobre <strong>n8n y automatización empresarial</strong>. Lo hago porque me gusta — el formato me obliga a explicar cosas técnicas en términos que cualquiera pueda entender, y eso después se nota en cómo trabajo con clientes. Si tenés un evento o equipo donde encajaría una charla, escribime.</p>
+        </div>
+
+        <div class="creds reveal">
+          <div class="creds-block">
+            <span class="creds-label">Formación</span>
+            <p>Técnico Universitario de Programación (UTN, 2019) · n8n Basic + Advanced (2025, oficial) · IA para Programadores (Educación IT, 2025) · ElasticSearch y HashiCorp (2025).</p>
+          </div>
+          <div class="creds-block">
+            <span class="creds-label">Idiomas</span>
+            <p>Castellano nativo · Portugués avanzado · Inglés intermedio.</p>
+          </div>
+          <div class="creds-block">
+            <span class="creds-label">Documentación</span>
+            <p>Ciudadanía italiana. Permite operar legalmente desde la UE si el proyecto lo requiere.</p>
+          </div>
+          <div class="creds-block">
+            <span class="creds-label">CV completo</span>
+            <p><a href="https://cv.hanemann.ar" target="_blank" rel="noopener noreferrer">cv.hanemann.ar →</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== ANTES DE LA LLAMADA =================== -->
+    <section class="section section--no" id="no">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow-warm">Antes de la llamada</span>
+          <h2>Para que no perdamos tiempo ninguno de los dos.</h2>
+        </div>
+
+        <div class="prelude reveal">
+          <p>Antes de agendar, te cuento algunas cosas que en mi experiencia hacen la diferencia entre una conversación útil y una que termina incómoda.</p>
+
+          <p>Lo más importante es que del lado tuyo haya un interlocutor con la información y la autoridad de decisión. Sin esa persona, el diagnóstico no se sostiene y el proyecto se traba antes de empezar. Es el punto que más veces me hace bajar conversaciones, no por mí sino por respeto al tiempo del cliente.</p>
+
+          <p>El segundo punto es sobre la IA. Si el ángulo de tu proyecto es <em>"queremos IA"</em>, me gusta cambiar el orden: primero entender qué problema necesitás resolver, después ver si la IA aporta o si solo agrega complejidad. Es una conversación que prefiero tener antes de firmar nada.</p>
+
+          <p class="prelude-foot">Más allá de eso, todo proyecto razonable lo escucho — desde una automatización puntual hasta un sistema completo. Si lo tuyo entra en cualquiera de los dos, agendemos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== FAQ =================== -->
+    <section class="section" id="faqs">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Lo que la gente me pregunta.</h2>
+        </div>
+
+        <div class="faq reveal-stagger">
+
+          <details>
+            <summary>¿Cómo sé si necesito un consultor o un implementador?</summary>
+            <p>Si ya sabés exactamente qué automatizar, contratá a un implementador — sale más barato y va a hacer un buen trabajo. Si todavía no estás seguro de qué automatizar, en qué orden o con qué arquitectura, ahí entro yo. Mi trabajo es ayudarte a decidir, no a ejecutar a ciegas.</p>
+          </details>
+
+          <details>
+            <summary>¿Por qué trabajás solo en diagnóstico y diseño?</summary>
+            <p>Porque ahí está la mayor parte del criterio. Para construir, si el volumen lo pide, sumo gente de confianza — pero te lo digo antes de arrancar, no después. No me gusta la lógica del equipo invisible facturando por debajo.</p>
+          </details>
+
+          <details>
+            <summary>¿Qué pasa si te equivocás vos en el diseño?</summary>
+            <p>Lo arreglo sin cargo durante los tres meses posteriores a la entrega, mientras el servicio de mantenimiento esté vigente. Aplica solo a errores de arquitectura míos — no a cambios de alcance ni nuevos requerimientos. Va por escrito en el contrato.</p>
+          </details>
+
+          <details>
+            <summary>¿Cuánto cuesta?</summary>
+            <p>Depende del alcance del proyecto, no de las horas trabajadas. En la primera conversación salimos con un rango concreto — no con un "lo vemos". Las tarifas se ajustan según contexto (Argentina, LATAM o export), y eso lo definimos según dónde operás.</p>
+          </details>
+
+          <details>
+            <summary>¿Por qué cobrás el diagnóstico si otros lo ofrecen gratis?</summary>
+            <p>Porque el diagnóstico <em>es</em> el trabajo. Lo que regalan otros es una llamada comercial disfrazada — y eso lo notás cuando la conversación termina más en una propuesta que en un análisis real. Yo dedico semanas a entender tu operación. Eso no es gratis, ni acá ni en ningún lado donde se respete el trabajo técnico.</p>
+          </details>
+
+          <details>
+            <summary>¿Por qué n8n?</summary>
+            <p>Por control técnico, flexibilidad de arquitectura, posibilidad de self-hosting y mejor manejo de escenarios con IA. Existen alternativas más simples para casos más simples — y si tu caso entra ahí, te lo voy a decir en la primera conversación. n8n brilla cuando la operación crece y necesita gobernanza real.</p>
+          </details>
+
+          <details>
+            <summary>¿Vendor lock-in?</summary>
+            <p>Cero. Lo que diseño te queda documentado, comentado y corriendo en infraestructura tuya. Si mañana querés cortar conmigo, otro técnico puede leer lo que dejé y seguir. Esa es la prueba del trabajo bien hecho — no la dependencia.</p>
+          </details>
+
+          <details>
+            <summary>¿Pesos, dólares, euros?</summary>
+            <p>Argentina, facturo en pesos con ajuste. LATAM y export, en USD. Si operás en euros, puedo facturar desde Italia gracias a la ciudadanía. Sin vueltas.</p>
+          </details>
+
+          <details>
+            <summary>¿Trabajás presencial?</summary>
+            <p>Vivo en Mar del Plata. Si el proyecto lo pide y la geografía da, voy. Si no, lo hacemos por video con buenas reuniones y documentación. La mayoría de los proyectos se diseñan mejor así que mal en una oficina, te lo digo en serio.</p>
+          </details>
+
+          <details>
+            <summary>¿Y si quiero que des una charla en mi empresa?</summary>
+            <p>Sí, hago eso. Doy charlas sobre n8n y automatización empresarial — en eventos públicos y también internas para equipos. Escribime y vemos formato, duración y temas.</p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================== CIERRE =================== -->
+    <section class="section" id="contacto">
+      <div class="wrap">
+        <div class="closer reveal">
+          <span class="eyebrow">Conversemos</span>
+          <h2>Una hora. Sin pitch.</h2>
+          <p class="closer-lead">Vos me contás dónde está tu operación, yo te escucho con calma y te digo cómo se podría abordar. A veces salimos con un proyecto, a veces con una recomendación distinta, a veces con la conversación pendiente para más adelante. Cualquiera de las tres está bien.</p>
+
+          <div class="closer-cta">
+            <a class="btn btn-main btn-xl" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              Agendemos
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <div class="closer-meta">
+              <p>Sin formulario largo. Sin embudo.</p>
+              <p>Sin diagnóstico gratuito disfrazado de comercial.</p>
+            </div>
+          </div>
+
+          <div class="closer-channels">
+            <span>O escribime antes:</span>
+            <a href="mailto:hola@hanemann.ar">hola@hanemann.ar</a>
+            <span class="dot">·</span>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span class="dot">·</span>
+            <a href="https://cv.hanemann.ar" target="_blank" rel="noopener noreferrer">cv.hanemann.ar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================== FOOTER =================== -->
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <span class="foot-brand">
+          <img src="assets/logo-mark.svg" alt="" onerror="this.src='assets/logo-icon.svg'" />
+          Hanemann
+        </span>
+        <p>Franco E. Hanemann · Mar del Plata, Argentina</p>
+        <p>Automatización empresarial · n8n · IA aplicada · Desarrollo a medida</p>
+      </div>
+      <div class="foot-right">
+        <p>© <span id="foot-year">2026</span> · Construido con n8n, criterio y trece aspas.</p>
+        <p><a href="https://cv.hanemann.ar" target="_blank" rel="noopener noreferrer">cv.hanemann.ar</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================== CHATBOT =================== -->
+  <button class="chat-trigger" id="chat-trigger" type="button"
+          aria-haspopup="dialog" aria-expanded="false" aria-controls="chat-drawer"
+          aria-label="Abrir chat con el agente">
+    <span class="chat-trigger-icon">
+      <img src="assets/logo-mark.svg" alt="" onerror="this.src='assets/logo-icon.svg'" />
+    </span>
+    <span>Hablar con Agente</span>
+  </button>
+
+  <div class="chat-overlay" id="chat-overlay" aria-hidden="true"></div>
+
+  <aside class="chat-drawer" id="chat-drawer" role="dialog" aria-modal="true"
+         aria-labelledby="chat-title" aria-hidden="true">
+
+    <header class="chat-header">
+      <div class="chat-header-avatar">
+        <img src="assets/logo-mark.svg" alt="" onerror="this.src='assets/logo-icon.svg'" />
+      </div>
+      <div class="chat-header-info">
+        <h4 id="chat-title">Asistente · Hanemann</h4>
+        <p><span class="dot"></span>En línea · responde en segundos</p>
+      </div>
+      <button class="chat-close" id="chat-close" type="button" aria-label="Cerrar chat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 6l12 12M18 6l-12 12"/>
+        </svg>
+      </button>
+    </header>
+
+    <div class="chat-body" id="chat-body">
+      <div class="chat-welcome">
+        <div class="chat-welcome-mark">
+          <img src="assets/logo-mark.svg" alt="" onerror="this.src='assets/logo-icon.svg'" />
+        </div>
+        <h5>¿En qué te ayudo?</h5>
+        <p>Soy el asistente de Franco. Puedo contarte cómo trabaja, en qué proyectos se mete y cuáles rechaza. Si querés agendar conversación, te paso el link.</p>
+
+        <div class="chat-suggestions">
+          <button class="chat-suggestion" type="button" data-suggestion="¿En qué tipo de proyectos te metés?">
+            <span>¿En qué tipo de proyectos te metés?</span>
+          </button>
+          <button class="chat-suggestion" type="button" data-suggestion="¿Cuándo NO me conviene contratarte?">
+            <span>¿Cuándo NO me conviene contratarte?</span>
+          </button>
+          <button class="chat-suggestion" type="button" data-suggestion="¿Cuánto cuesta un diagnóstico?">
+            <span>¿Cuánto cuesta un diagnóstico?</span>
+          </button>
+          <button class="chat-suggestion" type="button" data-suggestion="Quiero agendar una conversación">
+            <span>Quiero agendar una conversación</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="chat-footer">
+      <form id="chat-form" autocomplete="off">
+        <div class="chat-input-wrap">
+          <textarea id="chat-input" class="chat-input" rows="1"
+                    placeholder="Escribí tu mensaje…" aria-label="Mensaje"></textarea>
+          <button class="chat-send" id="chat-send" type="submit" aria-label="Enviar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12l14-7-5 14-3-6-6-1z"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+      <small class="chat-disclaimer">Potenciado por <span>n8n · IA aplicada</span></small>
+    </footer>
+
+  </aside>
+
+  <!-- =================== SCRIPTS =================== -->
+  <!-- GSAP + ScrollTrigger + Lenis para animaciones premium nivel Awwwards -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+
+  <script src="js/turbina-hero.js" defer></script>
+  <script src="js/site.js" defer></script>
+  <script src="js/chat.js" defer></script>
+
+</body>
+</html>
