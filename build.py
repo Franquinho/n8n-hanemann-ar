@@ -781,7 +781,7 @@ def render_bot_prompt():
         f"- Operación mensual sin plazo mínimo: Monitoreo {v['monitoreo']} (hasta 3 flujos, respuesta en 48 h) u Operación {v['operacion']} (hasta 10 flujos, 2 h de cambios, respuesta en 24 h) · Brasil: {vb['monitoreo']} / {vb['operacion']}",
         f"- Horas sueltas: {v['hora']} la hora, con presupuesto previo · Brasil: {vb['hora']} por hora.",
         "- Meta (mensajes de WhatsApp) y el proveedor de IA se pagan aparte, directo y a nombre de la empresa del cliente, sin recargo de Franco.",
-        "- Pago: 50% al empezar y 50% contra entrega. Argentina: en dólares o en pesos al tipo de cambio vendedor del Banco Nación del día de la factura. Resto de Latinoamérica y Brasil: transferencia internacional en dólares; en Brasil los valores en reales son referencia y los tributos de importación de servicio corren por cuenta del cliente.",
+        "- Pago: 50% al empezar y 50% contra entrega. Argentina: precios finales con Factura C (Franco es monotributista, no se suma IVA), en dólares o en pesos al tipo de cambio vendedor del Banco Nación del día de la factura. Resto de Latinoamérica y Brasil: transferencia internacional en dólares; en Brasil los valores en reales son referencia y los tributos de importación de servicio corren por cuenta del cliente.",
     ]
     tpl = (C / "bot-prompt.md").read_text(encoding="utf-8")
     out = tpl.replace("{{PRECIOS}}", "\n".join(lines)).replace("{{CAL}}", S["cal_url"]).replace("{{WHATSAPP}}", S["whatsapp_display"])

@@ -86,7 +86,7 @@
         "state": "prod",
         "status": "En producción",
         "title": "Mayorista de alimentos · Argentina",
-        "text": "Agente de WhatsApp que atiende una base de unos 11.700 contactos. Entiende audios, pide nombre, actividad y zona, manda la lista de precios en PDF y pasa la conversación al equipo, que trabaja desde un CRM con cuatro perfiles."
+        "text": "Agente de WhatsApp que atiende una base de más de 10.000 contactos. Entiende audios, pide nombre, actividad y zona, manda la lista de precios en PDF y pasa la conversación al equipo, que trabaja desde un CRM con cuatro perfiles."
       },
       {
         "state": "impl",
@@ -170,7 +170,7 @@
       }
     ],
     "hora": "Horas sueltas: {hora} la hora, con presupuesto antes de empezar.",
-    "pago": "Precios en dólares. Podés pagar en pesos al tipo de cambio vendedor del Banco Nación del día de la factura. 50% al empezar y 50% contra entrega. Meta y el proveedor de IA te cobran directo a tu tarjeta, a nombre de tu empresa y sin recargo mío."
+    "pago": "Precios en dólares, finales: facturo como monotributista (Factura C), sin IVA aparte. Podés pagar en pesos al tipo de cambio vendedor del Banco Nación del día de la factura. 50% al empezar y 50% contra entrega. Meta y el proveedor de IA te cobran directo a tu tarjeta, a nombre de tu empresa y sin recargo mío."
   },
   "metodo": {
     "kicker": "Cómo trabajo",
