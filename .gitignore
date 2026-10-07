@@ -22,3 +22,5 @@ build/
 .env
 .env.local
 .env.production
+tools/_og.html
+__pycache__/

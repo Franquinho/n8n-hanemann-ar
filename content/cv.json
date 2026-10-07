@@ -1,0 +1,197 @@
+{
+  "_comentario": "Contenido de cv.hanemann.ar (es en la raíz, pt en /pt/). build.py genera las páginas; tools/render.py genera los PDF.",
+  "es": {
+    "html_lang": "es",
+    "path": "",
+    "title": "Franco E. Hanemann · CV · Automatización con n8n e IA",
+    "description": "Currículum de Franco E. Hanemann, especialista independiente en automatización con n8n e IA, API oficial de WhatsApp, CRM y atribución de ventas.",
+    "role": "Especialista en automatización con n8n e IA",
+    "tagline": "API oficial de WhatsApp · CRM · Atribución de ventas a Google Ads y Meta",
+    "loc": "Mar del Plata, Argentina",
+    "pdf_label": "Descargar PDF",
+    "pdf_file": "franco-hanemann-cv.pdf",
+    "alt_lang": {
+      "label": "Português",
+      "href": "pt/"
+    },
+    "site_label": "Servicios y precios",
+    "h_resumen": "Resumen",
+    "resumen": "Desde abril de 2026 trabajo como especialista independiente en automatización con n8n e IA para empresas de Argentina, y atiendo también Brasil y el resto de Latinoamérica. En producción: un agente de WhatsApp con CRM para un mayorista de alimentos con unos 11.700 contactos y un bot de WhatsApp para una distribuidora de acero, donde implemento la atribución de ventas a Google Ads. Antes: doce años en Sistemas Bejerman / Thomson Reuters (ERP: soporte, instalación y desarrollo), Oversoft y AGNOSTIC.",
+    "h_exp": "Experiencia",
+    "exp": [
+      {
+        "role": "Independiente · Automatización con n8n e IA",
+        "org": "Hanemann · n8n.hanemann.ar",
+        "dates": "04/2026 — hoy",
+        "bullets": [
+          "Agente de WhatsApp con IA para un mayorista de alimentos: transcripción de audios, toma de datos, envío de la lista de precios y pase al equipo, que trabaja en un CRM con cuatro perfiles sobre n8n Data Tables.",
+          "Distribuidora de acero, vía agencia aliada: bot de WhatsApp en producción y atribución de ventas a Google Ads con GCLID y conversiones offline, en implementación.",
+          "Bot del sitio n8n.hanemann.ar: responde consultas, registra contactos y avisa por correo.",
+          "Stack: n8n autoalojado, API oficial de WhatsApp (YCloud y Cloud API), Chatwoot, OpenRouter, Groq y Whisper."
+        ]
+      },
+      {
+        "role": "Desarrollador Full Stack Ssr",
+        "org": "AGNOSTIC",
+        "dates": "09/2024 — 04/2026",
+        "bullets": [
+          "Proyecto Banco Supervielle (09/2024 – 05/2025): implementación de GA4, lambdas en Python y desarrollo front en TypeScript para toggles e integraciones con servicios.",
+          "n8n developer (06/2025 – 04/2026): agentes, chatbots y automatizaciones con IA; flujos contra bases de datos con manejo de errores y reportes."
+        ]
+      },
+      {
+        "role": "Desarrollador Full Stack Jr",
+        "org": "OVERSOFT",
+        "dates": "12/2022 — 06/2024",
+        "bullets": [
+          "Desarrollo web con C# .NET Core, API REST, MVC, AngularJS, React, SQL Server, Entity Framework, LINQ, jQuery y Ajax."
+        ]
+      },
+      {
+        "role": "Soporte, mantenimiento y desarrollo",
+        "org": "Sistemas Bejerman · Thomson Reuters",
+        "dates": "06/2010 — 12/2022",
+        "bullets": [
+          "Soporte técnico: instalaciones, asistencia remota, seguimiento de casos, backups, actualizaciones y reparación de estructuras cliente/servidor.",
+          "Programación y mantenimiento: correcciones, scripts, reportería, instaladores, MVC en C# y VB.NET, .NET Core, VB6, servidores de compilación y stored procedures."
+        ]
+      }
+    ],
+    "h_skills": "Competencias",
+    "skills": [
+      "n8n autoalojado",
+      "Agentes de IA",
+      "API oficial de WhatsApp",
+      "Chatwoot",
+      "Conversiones offline en Google Ads",
+      "OpenRouter · Groq · Whisper",
+      "JavaScript y TypeScript",
+      "Python",
+      "C# y .NET",
+      "SQL Server",
+      "React y Angular",
+      "GA4"
+    ],
+    "h_certs": "Cursos y certificaciones",
+    "certs": [
+      "n8n Basic · 2025",
+      "n8n Advanced · 2025",
+      "HashiCorp · 2025",
+      "Elasticsearch · 2025",
+      "IA para Programadores, Educación IT · 2025"
+    ],
+    "h_edu": "Educación",
+    "edu": [
+      {
+        "title": "Técnico Universitario de Programación",
+        "org": "Universidad Tecnológica Nacional",
+        "year": "2019"
+      }
+    ],
+    "h_lang": "Idiomas",
+    "langs": [
+      "Español · nativo",
+      "Portugués · avanzado"
+    ],
+    "h_more": "Formación complementaria",
+    "more": "Facultad de Ingeniería de Mar del Plata (2004), Universidad CAECE (2005, 2009), Hilet College (2004), Instituto William Blake (2006–2007), CEM English (2008), ITMasters (2009–2010), UCIP Mar del Plata (2010).",
+    "contact_label": "Contacto"
+  },
+  "pt": {
+    "html_lang": "pt-BR",
+    "path": "pt/",
+    "title": "Franco E. Hanemann · Currículo · Automação com n8n e IA",
+    "description": "Currículo de Franco E. Hanemann, especialista independente em automação com n8n e IA, API oficial do WhatsApp, CRM e atribuição de vendas.",
+    "role": "Especialista em automação com n8n e IA",
+    "tagline": "API oficial do WhatsApp · CRM · Atribuição de vendas ao Google Ads e à Meta",
+    "loc": "Mar del Plata, Argentina",
+    "pdf_label": "Baixar PDF",
+    "pdf_file": "franco-hanemann-curriculo.pdf",
+    "alt_lang": {
+      "label": "Español",
+      "href": "../"
+    },
+    "site_label": "Serviços e preços",
+    "h_resumen": "Resumo",
+    "resumen": "Desde abril de 2026 trabalho como especialista independente em automação com n8n e IA para empresas da Argentina, e atendo também o Brasil e o restante da América Latina. Em produção: um agente de WhatsApp com CRM para um atacadista de alimentos com cerca de 11.700 contatos e um bot de WhatsApp para uma distribuidora de aço, onde implemento a atribuição de vendas ao Google Ads. Antes: doze anos na Sistemas Bejerman / Thomson Reuters (ERP: suporte, implantação e desenvolvimento), Oversoft e AGNOSTIC.",
+    "h_exp": "Experiência",
+    "exp": [
+      {
+        "role": "Independente · Automação com n8n e IA",
+        "org": "Hanemann · n8n.hanemann.ar",
+        "dates": "04/2026 — hoje",
+        "bullets": [
+          "Agente de WhatsApp com IA para um atacadista de alimentos: transcrição de áudios, coleta de dados, envio da tabela de preços e transbordo para a equipe, que trabalha num CRM com quatro perfis sobre n8n Data Tables.",
+          "Distribuidora de aço, via agência parceira: bot de WhatsApp em produção e atribuição de vendas ao Google Ads com GCLID e conversões offline, em implantação.",
+          "Bot do site n8n.hanemann.ar: responde dúvidas, registra contatos e avisa por e-mail.",
+          "Stack: n8n auto-hospedado, API oficial do WhatsApp (YCloud e Cloud API), Chatwoot, OpenRouter, Groq e Whisper."
+        ]
+      },
+      {
+        "role": "Desenvolvedor Full Stack pleno",
+        "org": "AGNOSTIC",
+        "dates": "09/2024 — 04/2026",
+        "bullets": [
+          "Projeto Banco Supervielle (09/2024 – 05/2025): implementação de GA4, lambdas em Python e desenvolvimento front-end em TypeScript para toggles e integrações com serviços.",
+          "n8n developer (06/2025 – 04/2026): agentes, chatbots e automações com IA; fluxos com bancos de dados, tratamento de erros e relatórios."
+        ]
+      },
+      {
+        "role": "Desenvolvedor Full Stack júnior",
+        "org": "OVERSOFT",
+        "dates": "12/2022 — 06/2024",
+        "bullets": [
+          "Desenvolvimento web com C# .NET Core, API REST, MVC, AngularJS, React, SQL Server, Entity Framework, LINQ, jQuery e Ajax."
+        ]
+      },
+      {
+        "role": "Suporte, manutenção e desenvolvimento",
+        "org": "Sistemas Bejerman · Thomson Reuters",
+        "dates": "06/2010 — 12/2022",
+        "bullets": [
+          "Suporte técnico: instalações, atendimento remoto, acompanhamento de chamados, backups, atualizações e correção de estruturas cliente/servidor.",
+          "Programação e manutenção: correções, scripts, relatórios, instaladores, MVC em C# e VB.NET, .NET Core, VB6, servidores de build e stored procedures."
+        ]
+      }
+    ],
+    "h_skills": "Competências",
+    "skills": [
+      "n8n auto-hospedado",
+      "Agentes de IA",
+      "API oficial do WhatsApp",
+      "Chatwoot",
+      "Conversões offline no Google Ads",
+      "OpenRouter · Groq · Whisper",
+      "JavaScript e TypeScript",
+      "Python",
+      "C# e .NET",
+      "SQL Server",
+      "React e Angular",
+      "GA4"
+    ],
+    "h_certs": "Cursos e certificações",
+    "certs": [
+      "n8n Basic · 2025",
+      "n8n Advanced · 2025",
+      "HashiCorp · 2025",
+      "Elasticsearch · 2025",
+      "IA para Programadores, Educación IT · 2025"
+    ],
+    "h_edu": "Formação",
+    "edu": [
+      {
+        "title": "Técnico Universitário de Programação",
+        "org": "Universidad Tecnológica Nacional (Argentina)",
+        "year": "2019"
+      }
+    ],
+    "h_lang": "Idiomas",
+    "langs": [
+      "Espanhol · nativo",
+      "Português · avançado"
+    ],
+    "h_more": "Formação complementar",
+    "more": "Facultad de Ingeniería de Mar del Plata (2004), Universidad CAECE (2005, 2009), Hilet College (2004), Instituto William Blake (2006–2007), CEM English (2008), ITMasters (2009–2010), UCIP Mar del Plata (2010).",
+    "contact_label": "Contato"
+  }
+}

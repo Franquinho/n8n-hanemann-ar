@@ -1,0 +1,351 @@
+{
+  "_comentario": "Portada /es/ en español neutro (tuteo) para Latinoamérica y para pauta. Precios en USD. Los {marcadores} se reemplazan con content/precios.json.",
+  "html_lang": "es",
+  "og_locale": "es_LA",
+  "moneda": "usd",
+  "path": "es/",
+  "privacy_path": "privacidad/",
+  "meta": {
+    "title": "Agentes de WhatsApp con IA y n8n · Franco Hanemann",
+    "description": "Agentes de IA en la API oficial de WhatsApp que atienden, toman datos y pasan a tu equipo. Automatizaciones con n8n desde {puntual}. Diagnóstico gratis.",
+    "og_title": "Tu WhatsApp atiende solo. Tu equipo vende.",
+    "og_description": "Agentes de WhatsApp con IA y automatizaciones con n8n para empresas de Latinoamérica. Precios publicados y diagnóstico gratis.",
+    "og_image": "og-es.png",
+    "site_name": "Franco Hanemann · Automatización con n8n e IA"
+  },
+  "fmt": {
+    "desde": "desde",
+    "antes": "En 2027:",
+    "mes": "/mes",
+    "gratis": "Gratis"
+  },
+  "nav": {
+    "skip": "Saltar al contenido",
+    "casos": "Casos",
+    "precios": "Precios",
+    "metodo": "Cómo trabajo",
+    "sobre": "Sobre mí",
+    "preguntas": "Preguntas",
+    "cta": "Diagnóstico gratis",
+    "menu_label": "Secciones",
+    "cta_short": "Agendar"
+  },
+  "alt_lang": {
+    "label": "Português",
+    "short": "PT",
+    "target": "pt"
+  },
+  "hero": {
+    "eyebrow": "n8n · IA · WhatsApp · Español y portugués",
+    "h1": [
+      "Tu WhatsApp",
+      "atiende solo.",
+      "Tu equipo",
+      "vende."
+    ],
+    "h1_accent": [
+      1
+    ],
+    "lead": "Creo agentes de IA sobre la API oficial de WhatsApp que entienden audios, piden los datos del cliente, envían la lista de precios y pasan la conversación a la persona de tu equipo que corresponde. Todo en n8n, en cuentas a nombre de tu empresa y documentado. También resuelvo automatizaciones pequeñas: hojas de cálculo, formularios, avisos y reportes.",
+    "cta_cal": {
+      "b": "Agenda el diagnóstico",
+      "small": "30 minutos · gratis"
+    },
+    "cta_wa": {
+      "b": "Escríbeme por WhatsApp",
+      "small": "{whatsapp_display}"
+    },
+    "cta_bot": {
+      "b": "Prueba el bot",
+      "small": "demo en vivo de lo que construyo"
+    },
+    "wa_text": "Hola Franco, vi tu sitio y quiero automatizar la atención por WhatsApp",
+    "proof_label": "En producción",
+    "proof": [
+      {
+        "name": "Mayorista de alimentos",
+        "tag": "Argentina"
+      },
+      {
+        "name": "Distribuidora de acero",
+        "tag": "vía agencia aliada"
+      }
+    ],
+    "facts": [
+      "16 años en software, 12 en un proveedor de ERP",
+      "Cursos oficiales de n8n: Basic y Advanced (2025)"
+    ],
+    "cta_note": "En 30 minutos te digo qué conviene automatizar primero, cuánto cuesta y cuánto tarda."
+  },
+  "casos": {
+    "kicker": "Casos",
+    "h2": "Lo que ya está funcionando",
+    "sub": "Proyectos reales y la etapa en la que están hoy.",
+    "items": [
+      {
+        "state": "prod",
+        "status": "En producción",
+        "title": "Mayorista de alimentos · Argentina",
+        "text": "Agente de WhatsApp que atiende una base de unos 11.700 contactos. Entiende audios, pide nombre, actividad y zona, envía la lista de precios en PDF y pasa la conversación al equipo, que trabaja desde un CRM con cuatro perfiles."
+      },
+      {
+        "state": "impl",
+        "status": "En producción · nueva fase en curso",
+        "title": "Distribuidora de acero · vía agencia aliada",
+        "text": "Bot de WhatsApp funcionando. En implementación: cada venta cerrada por WhatsApp vuelve a Google Ads como conversión, vinculada al clic del anuncio que la originó."
+      },
+      {
+        "state": "prod",
+        "status": "En producción",
+        "title": "Este sitio",
+        "text": "El bot de esta página responde consultas, califica cada contacto y me avisa por correo cuando alguien quiere avanzar. Es la misma base que uso en los proyectos.",
+        "demo": "Pruébalo ahora"
+      }
+    ]
+  },
+  "precios": {
+    "kicker": "Precios",
+    "h2": "Cuánto cuesta, antes de la llamada",
+    "sub": "Cada propuesta dice qué incluye y qué no, y tiene validez de {validez} días.",
+    "launch": "Precios de lanzamiento hasta el {lanzamiento}",
+    "path_label": "Cómo empezamos",
+    "steps": [
+      {
+        "name": "Diagnóstico",
+        "price": "diagnostico",
+        "meta": "30 min · videollamada",
+        "text": "Me muestras cómo atienden hoy y te digo qué conviene automatizar primero, si conviene, y cuánto cuesta."
+      },
+      {
+        "name": "Piloto en modo sombra",
+        "price": "piloto",
+        "meta": "Sin tocar tu número",
+        "text": "Exportas entre 50 y 100 conversaciones de WhatsApp y corro el agente sobre ellas, sin tocar tu número. Recibes un informe con la tasa de acierto. Si contratas la implementación dentro de los 30 días, el 100% del piloto se descuenta del precio de la implementación."
+      },
+      {
+        "name": "Agente de WhatsApp con IA + CRM",
+        "price": "agente",
+        "meta": "Implementación",
+        "inc_label": "Incluye",
+        "incluye": [
+          "Hasta 4 tipos de consulta",
+          "Audios y pase a una persona del equipo",
+          "Bandeja compartida para tu equipo",
+          "Conexión con 1 CRM que tenga API",
+          "1 semana en modo sombra y 2 rondas de ajustes",
+          "Manual de operación"
+        ],
+        "exc_label": "No incluye",
+        "no_incluye": "ERP, campañas salientes, panel a medida ni migración de datos."
+      },
+      {
+        "name": "Operación mensual",
+        "price": "monitoreo",
+        "meta": "Sin plazo mínimo",
+        "planes": [
+          {
+            "name": "Monitoreo",
+            "price": "monitoreo",
+            "text": "Hasta 3 flujos, correcciones y respuesta en 48 h."
+          },
+          {
+            "name": "Operación",
+            "price": "operacion",
+            "text": "Hasta 10 flujos, 2 h de cambios al mes y respuesta en 24 h."
+          }
+        ]
+      }
+    ],
+    "extras_label": "Por fuera del agente",
+    "extras": [
+      {
+        "name": "Automatización puntual",
+        "price": "puntual",
+        "text": "Un flujo entre tus herramientas: formulario a hoja de cálculo, aviso por correo o Telegram, reporte semanal, alta en el CRM. Entrega habitual: 5 días hábiles desde que recibo los accesos, con 30 días de correcciones. No incluye WhatsApp ni IA conversacional."
+      },
+      {
+        "name": "Integración con tu ERP",
+        "price": "erp",
+        "text": "Pedidos, inventario o clientes entre el agente y un ERP que tenga API. Siempre después de un piloto, para cotizar sobre algo medido."
+      }
+    ],
+    "hora": "Horas sueltas: {hora} la hora, con presupuesto antes de empezar.",
+    "pago": "Precios en dólares estadounidenses, por transferencia internacional. 50% al inicio y 50% contra entrega. No incluyen impuestos ni retenciones de tu país: los detallo en la propuesta. Meta y el proveedor de IA te cobran directo a tu tarjeta, a nombre de tu empresa y sin recargo de mi parte."
+  },
+  "metodo": {
+    "kicker": "Cómo trabajo",
+    "h2": "Qué recibes cuando termino",
+    "sub": "Un flujo funcionando en tu cuenta, con cada paso a la vista y un registro de lo que hizo.",
+    "svg_aria": "Diagrama de un flujo en n8n: un webhook recibe el evento, se valida, pasa a un agente de IA con límites que consulta el ERP o el CRM y envía avisos, con un registro de lo que pasó en cada paso.",
+    "svg": {
+      "n1_tag": "TRIGGER",
+      "n1_title": "Webhook",
+      "n1_sub": "Recibe el evento",
+      "n2_tag": "VALIDACIÓN",
+      "n2_title": "Datos + acceso",
+      "n2_sub": "Entra solo lo válido",
+      "n3_tag": "AGENTE IA",
+      "n3_title": "Con límites",
+      "n3_sub": "Pasa a una persona",
+      "n4_tag": "SISTEMA",
+      "n4_title": "CRM · hoja de cálculo",
+      "n4_sub": "API · SQL",
+      "n5_tag": "AVISO",
+      "n5_title": "Correo · Telegram",
+      "n6_tag": "REGISTRO",
+      "n6_title": "Logs + errores",
+      "n6_sub": "Qué pasó y dónde"
+    },
+    "entregables": [
+      "<b>Cuentas a nombre de tu empresa.</b> WhatsApp, IA y servidor quedan contigo, con tus credenciales.",
+      "<b>Flujos exportados y versionados.</b> Si mañana cambias de proveedor, otro técnico continúa desde ahí.",
+      "<b>Manual de operación.</b> Qué hace cada flujo, qué hacer si falla y a quién avisa.",
+      "<b>Registro de errores desde el primer día.</b> Si algo se detiene, llega un aviso y queda anotado dónde."
+    ]
+  },
+  "servicios": {
+    "kicker": "Otros servicios",
+    "h2": "Además del agente de WhatsApp",
+    "items": [
+      {
+        "tag": "Agencias",
+        "title": "Atribución de ventas a Google Ads y Meta",
+        "text": "Conecto el clic del anuncio con la venta que se cerró por WhatsApp y la devuelvo a la plataforma como conversión offline. Piloto para las dos primeras agencias."
+      },
+      {
+        "tag": "Integración",
+        "title": "ERP, CRM y hojas de cálculo conectados",
+        "text": "Lo que hoy copias a mano entre sistemas, lo conecto por API. Doce años en un proveedor de ERP me enseñaron a no romper lo que ya funciona."
+      },
+      {
+        "tag": "Operación",
+        "title": "Reportes y avisos automáticos",
+        "text": "Reportes que se arman solos y avisos cuando pasa algo importante: un pedido grande, un cliente sin respuesta, un flujo que falló."
+      },
+      {
+        "tag": "Web",
+        "title": "Bots para tu sitio",
+        "text": "Un asistente como el de esta página: responde, califica el contacto y te avisa por correo cuando alguien quiere avanzar."
+      }
+    ]
+  },
+  "sobre": {
+    "kicker": "Quién está del otro lado",
+    "h2": "Franco Hanemann",
+    "photo_alt": "Franco E. Hanemann, consultor de automatización con n8n e IA",
+    "loc": "Mar del Plata, Argentina",
+    "lead": "Soy consultor independiente de automatización con n8n e IA, en Mar del Plata, Argentina. Trabajo solo: hablas con quien diseña, construye y mantiene lo que contratas.",
+    "p": "Empecé en 2010 en Sistemas Bejerman, de Thomson Reuters: doce años de soporte, instalación y desarrollo sobre un ERP. Después fui desarrollador full stack en .NET, Angular y React. Desde 2025 trabajo con n8n y agentes de IA, y desde abril de 2026, por mi cuenta.",
+    "tray_label": "Trayectoria profesional",
+    "tray": [
+      {
+        "years": "2026 — hoy",
+        "title": "Independiente · n8n, IA y WhatsApp",
+        "text": "Agentes de WhatsApp con CRM, atribución de ventas a Google Ads y automatizaciones con n8n."
+      },
+      {
+        "years": "2024 — 2026",
+        "title": "AGNOSTIC · Full Stack Ssr y n8n developer",
+        "text": "Proyecto Banco Supervielle (GA4, lambdas en Python, TypeScript). Desde 2025, agentes, chatbots y automatizaciones con n8n."
+      },
+      {
+        "years": "2022 — 2024",
+        "title": "OVERSOFT · Full Stack",
+        "text": "C# y .NET Core, API REST, Angular, React, SQL Server y Entity Framework."
+      },
+      {
+        "years": "2010 — 2022",
+        "title": "Sistemas Bejerman · Thomson Reuters",
+        "text": "Soporte, mantenimiento y desarrollo sobre ERP: servidores de compilación, stored procedures, MVC en C# y VB.NET."
+      }
+    ],
+    "certs_label": "Cursos y certificaciones",
+    "certs_n8n": [
+      "n8n Basic · 2025",
+      "n8n Advanced · 2025"
+    ],
+    "certs": [
+      "HashiCorp · 2025",
+      "Elasticsearch · 2025",
+      "IA para Programadores · 2025",
+      "Técnico Universitario de Programación · UTN"
+    ],
+    "more": "Trayectoria completa en <a href=\"{cv}\" target=\"_blank\" rel=\"noopener\">cv.hanemann.ar</a> y en <a href=\"{linkedin}\" target=\"_blank\" rel=\"noopener\">LinkedIn</a>."
+  },
+  "faq": {
+    "kicker": "Preguntas frecuentes",
+    "h2": "Lo que suelen preguntarme antes de empezar",
+    "items": [
+      {
+        "q": "¿Cuánto cuesta automatizar la atención por WhatsApp?",
+        "lead": "Un agente con IA y CRM empieza en {agente} con el precio de lanzamiento. Una automatización pequeña, en {puntual}.",
+        "body": "El diagnóstico es gratis y el piloto en modo sombra cuesta {piloto}, que se descuenta si seguimos. Aparte pagas a Meta por los mensajes y al proveedor de IA por el uso, directo y a nombre de tu empresa."
+      },
+      {
+        "q": "¿Qué pasa si el agente se equivoca?",
+        "lead": "Antes de que hable con un cliente, lo pruebo con tus propias conversaciones.",
+        "body": "En el piloto y durante la primera semana de implementación el agente trabaja en modo sombra: lee y propone respuestas sin enviarlas. Cuando no está seguro, o cuando el cliente lo pide, pasa la conversación a una persona del equipo."
+      },
+      {
+        "q": "¿Usas la API oficial de WhatsApp?",
+        "lead": "Sí, siempre.",
+        "body": "Trabajo con la API oficial de Meta, a través de proveedores como YCloud o directo con la Cloud API. Con una API no oficial el número puede quedar bloqueado sin aviso. La oficial también tiene reglas: Meta no permite asistentes de IA de propósito general, así que el agente se limita a atención, ventas, citas y calificación."
+      },
+      {
+        "q": "¿Quedo atado a ti?",
+        "lead": "No. Las cuentas y las credenciales quedan a nombre de tu empresa.",
+        "body": "Te entrego los flujos exportados y un manual de operación. Si más adelante quieres cambiar de proveedor o gestionarlo con tu propio equipo, otro técnico puede continuar desde ahí."
+      },
+      {
+        "q": "¿Por qué n8n?",
+        "lead": "Porque puede correr en tu propio servidor, muestra qué hizo cada paso y cobra por ejecución completa.",
+        "body": "Para casos simples hay herramientas más simples, y si el tuyo es uno de ellos te lo digo. n8n conviene cuando la operación crece y necesitas saber qué corrió, cuándo y qué pasó si algo falló."
+      },
+      {
+        "q": "¿Trabajas con agencias?",
+        "lead": "Sí, de dos formas: por referido o en marca blanca.",
+        "body": "Si tienes clientes que piden bots, CRM o atribución de ventas, escríbeme por WhatsApp y te paso las condiciones."
+      },
+      {
+        "q": "¿Cómo se paga desde fuera de Argentina?",
+        "lead": "En dólares, por transferencia internacional.",
+        "body": "En la propuesta detallo los impuestos y retenciones que corresponden en tu país. Trabajo en UTC−3, la misma hora que Buenos Aires y Brasilia."
+      }
+    ]
+  },
+  "contacto": {
+    "kicker": "Diagnóstico gratis",
+    "h2": "30 minutos y sales con un plan.",
+    "lead": "Me cuentas cómo atienden hoy y qué se repite todos los días. Te digo qué conviene automatizar primero, cuánto cuesta y cuánto tarda. Si no conviene, también te lo digo.",
+    "cta_cal": "Agenda el diagnóstico",
+    "cta_wa": "WhatsApp",
+    "cta_bot": "Prueba el bot",
+    "meta": "Correo: <a href=\"mailto:{email}\">{email}</a> · Trayectoria: <a href=\"{cv}\" target=\"_blank\" rel=\"noopener\">cv.hanemann.ar</a> · <a href=\"{linkedin}\" target=\"_blank\" rel=\"noopener\">LinkedIn</a>"
+  },
+  "footer": {
+    "line1": "Mar del Plata, Argentina · Agentes de WhatsApp con IA · Automatización con n8n",
+    "privacy": "Privacidad",
+    "updated": "Actualizado: octubre de 2026",
+    "langs_label": "Idioma"
+  },
+  "chat": {
+    "fab": "Habla con el bot",
+    "fab_aria": "Abrir el chat con el bot de Franco",
+    "title": "Bot de Franco",
+    "status": "En línea · demo en vivo",
+    "close": "Cerrar",
+    "greeting": "¡Hola! Soy el bot de Franco, hecho con lo mismo que él construye para sus clientes. Pregúntame qué se puede automatizar, cuánto cuesta o cómo es el piloto.",
+    "chips": [
+      "¿Qué puedes automatizar en mi negocio?",
+      "¿Cuánto cuesta?",
+      "¿Cómo es el piloto en modo sombra?"
+    ],
+    "chip_action": "Quiero agendar el diagnóstico",
+    "placeholder": "Escribe tu mensaje…",
+    "input_label": "Mensaje",
+    "send": "Enviar",
+    "note": "Bot real sobre n8n. Al escribir aceptas la <a href=\"{privacy}\">política de privacidad</a>, incluido el uso de proveedores en EE. UU.",
+    "error": "Se cortó la conexión. Intenta de nuevo en un momento o escríbeme por WhatsApp.",
+    "lang": "es"
+  }
+}

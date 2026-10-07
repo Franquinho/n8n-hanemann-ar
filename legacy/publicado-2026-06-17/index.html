@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- ===== SEO · primary ===== -->
+  <title>Consultor n8n e IA en Argentina · Franco Hanemann — Automatización para empresas</title>
+  <meta name="description" content="¿Buscás quién automatice tus procesos con n8n e IA en Argentina? Franco Hanemann, consultor independiente en Mar del Plata. Veinte años en sistemas, diagnóstico honesto, sin lock-in. Agendá una llamada, escribime por WhatsApp o hablá con el bot." />
+  <meta name="keywords" content="consultor n8n Argentina, automatización con n8n, automatizar procesos con IA, n8n developer, agentes de IA, automatización empresarial, Mar del Plata" />
+  <meta name="author" content="Franco E. Hanemann" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="canonical" href="https://n8n.hanemann.ar/" />
+  <meta name="theme-color" content="#08080a" />
+
+  <!-- ===== Open Graph / Social ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Franco Hanemann · Automatización con n8n e IA" />
+  <meta property="og:title" content="Consultor de automatización con n8n e IA en Argentina" />
+  <meta property="og:description" content="Automatizo procesos con n8n y agentes de IA. Una persona real, no una agencia. Diagnóstico honesto, pensado en tu plata. Desde Mar del Plata para Argentina y el mundo." />
+  <meta property="og:url" content="https://n8n.hanemann.ar/" />
+  <meta property="og:image" content="https://n8n.hanemann.ar/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Franco E. Hanemann — Automatización con n8n e IA" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Consultor n8n e IA en Argentina · Franco Hanemann" />
+  <meta name="twitter:description" content="Automatizo procesos con n8n e IA. Una persona real, no una agencia. Diagnóstico honesto, sin lock-in." />
+  <meta name="twitter:image" content="https://n8n.hanemann.ar/og.png" />
+
+  <!-- Favicon — minimal red dot mark -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ec1f33'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-weight='700' font-size='20' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%23ec1f33'/%3E%3Ctext x='90' y='126' font-family='Arial,sans-serif' font-weight='700' font-size='112' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts: Space Grotesk (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <style id="site-css">
+/* =====================================================================
+   n8n.hanemann.ar — Landing (dirección nueva)
+   Space Grotesk (display) + Inter (body) · acento único: rojo
+   Mobile-first. Dark premium. Animaciones quirúrgicas.
+   ===================================================================== */
+
+:root {
+  /* Surfaces — near-black, neutral */
+  --bg: #08080a;
+  --bg-1: #0c0c0f;
+  --elev: #121216;
+  --card: rgba(255, 255, 255, 0.025);
+  --card-hi: rgba(255, 255, 255, 0.05);
+
+  /* Ink */
+  --ink: #f5f5f7;
+  --ink-soft: #c8c8cf;
+  --muted: #8a8a93;
+  --faint: #5a5a63;
+
+  /* Red — the single accent */
+  --red: #ec1f33;
+  --red-bright: #ff5063;
+  --red-deep: #8e0d18;
+  --red-mist: rgba(236, 31, 51, 0.16);
+
+  /* Lines */
+  --line: rgba(255, 255, 255, 0.09);
+  --line-hi: rgba(255, 255, 255, 0.18);
+  --line-warm: rgba(236, 31, 51, 0.30);
+
+  /* Type */
+  --display: "Space Grotesk", system-ui, sans-serif;
+  --body: "Inter", system-ui, sans-serif;
+
+  /* Radii */
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-pill: 999px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.1, 1);
+
+  --shadow-red: 0 18px 50px -22px rgba(236, 31, 51, 0.55);
+  --shadow-soft: 0 24px 60px -34px rgba(0, 0, 0, 0.8);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; cursor: pointer; background: none; border: none; }
+svg { display: block; }
+::selection { background: rgba(236, 31, 51, 0.4); color: #fff; }
+
+.skip-link {
+  position: absolute; left: -999px; top: 0; z-index: 200;
+  background: var(--red); color: #fff; padding: 10px 16px; border-radius: 0 0 var(--r-sm) 0;
+  font-family: var(--display); font-weight: 600;
+}
+.skip-link:focus { left: 0; }
+
+/* ---------- Background atmosphere ---------- */
+.atmos {
+  position: fixed; inset: 0; z-index: -2; pointer-events: none;
+  background:
+    radial-gradient(60% 50% at 78% -5%, rgba(236, 31, 51, 0.18), transparent 60%),
+    radial-gradient(55% 45% at 8% 8%, rgba(236, 31, 51, 0.07), transparent 62%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-1) 60%, var(--bg) 100%);
+}
+.grid-veil {
+  position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: 0.5;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px);
+  background-size: 58px 58px;
+  -webkit-mask-image: radial-gradient(ellipse 75% 55% at 50% 18%, #000 0%, transparent 72%);
+  mask-image: radial-gradient(ellipse 75% 55% at 50% 18%, #000 0%, transparent 72%);
+}
+
+/* ---------- Layout ---------- */
+.wrap { width: min(1180px, calc(100% - 2.2rem)); margin-inline: auto; position: relative; }
+
+.section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; position: relative; }
+.section + .section::before {
+  content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: min(70%, 760px); height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line-hi) 45%, var(--line-hi) 55%, transparent);
+  opacity: 0.7;
+}
+
+.sec-head { max-width: 60ch; margin-bottom: clamp(2rem, 4vw, 3rem); }
+.kicker {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--display); font-weight: 500; font-size: 0.72rem;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--red-bright);
+  margin-bottom: 1rem;
+}
+.kicker::before { content: ""; width: 22px; height: 1px; background: var(--red); }
+
+h2 {
+  font-family: var(--display); font-weight: 600; margin: 0;
+  font-size: clamp(1.75rem, 4.6vw, 3rem); line-height: 1.04; letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.sec-sub { color: var(--muted); margin: 1rem 0 0; max-width: 56ch; font-size: 1.02rem; }
+
+/* ---------- Top bar ---------- */
+.top {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(8, 8, 10, 0.55); backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  border-bottom: 1px solid transparent; transition: background 0.3s, border-color 0.3s;
+}
+.top.is-scrolled { background: rgba(8, 8, 10, 0.86); border-bottom-color: var(--line); }
+.nav { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+
+.brand { display: inline-flex; align-items: center; gap: 0.6rem; font-family: var(--display); font-weight: 600; }
+.brand-mark {
+  width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center;
+  background: linear-gradient(150deg, var(--red-bright), var(--red-deep));
+  color: #fff; font-weight: 700; font-size: 16px; box-shadow: 0 0 16px rgba(236,31,51,0.45);
+}
+.brand-mark.sm { width: 22px; height: 22px; font-size: 12px; border-radius: 6px; }
+.brand-word { letter-spacing: -0.02em; font-size: 1.05rem; }
+.brand-dot { color: var(--red); }
+
+.nav-links { display: flex; align-items: center; gap: 1.4rem; }
+.nav-links > a:not(.nav-cta) { display: none; font-size: 0.9rem; color: var(--muted); transition: color 0.2s; }
+.nav-links > a:not(.nav-cta):hover { color: var(--ink); }
+.nav-cta {
+  font-family: var(--display); font-weight: 500; font-size: 0.88rem;
+  padding: 0.5rem 1.05rem; border-radius: var(--r-pill);
+  border: 1px solid var(--line-warm); background: var(--red-mist); color: #fff;
+  transition: background 0.25s, border-color 0.25s, transform 0.25s var(--ease-out);
+}
+.nav-cta:hover { background: rgba(236,31,51,0.28); border-color: var(--red); transform: translateY(-1px); }
+
+@media (min-width: 760px) {
+  .nav-links > a:not(.nav-cta) { display: inline; }
+}
+
+/* ---------- HERO ---------- */
+.hero { padding-top: clamp(2.5rem, 6vw, 4.5rem); padding-bottom: clamp(2.5rem, 5vw, 4rem); }
+.hero-grid { display: flex; flex-direction: column; }
+
+.hero-head { margin-bottom: 1.6rem; }
+.hero-head .eyebrow { margin: 0; }
+@media (max-width: 599px) { .eyebrow { max-width: 74%; } }
+
+/* Title + turbina como co-protagonistas (dos zonas, sin solapamiento) */
+.hero-title-wrap {
+  display: grid; grid-template-columns: 1fr;
+  gap: clamp(1.6rem, 5vw, 2.4rem); align-items: center;
+}
+.hero-turbine {
+  position: relative; aspect-ratio: 1; pointer-events: none;
+  width: clamp(210px, 62vw, 320px); margin: 0 auto; justify-self: center;
+}
+.hero-turbine::before {
+  content: ""; position: absolute; inset: -36%;
+  background: radial-gradient(circle at 50% 50%, rgba(236, 31, 51, 0.45), rgba(236, 31, 51, 0.13) 42%, transparent 68%);
+  filter: blur(26px); z-index: -1;
+  animation: bloomPulse 6s var(--ease-in-out, ease-in-out) infinite;
+}
+.hero-turbine canvas {
+  width: 100%; height: 100%; display: block;
+  filter: drop-shadow(0 16px 60px rgba(236, 31, 51, 0.45));
+}
+@keyframes bloomPulse {
+  0%, 100% { opacity: 0.82; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.07); }
+}
+@media (min-width: 760px) {
+  /* Desktop: dos columnas — titular a la izquierda, turbina dominante a la derecha */
+  .hero-title-wrap {
+    grid-template-columns: 1fr clamp(250px, 38%, 460px);
+    gap: clamp(1.5rem, 4vw, 3rem);
+  }
+  .hero-title { font-size: clamp(2.6rem, 6.6vw, 5.6rem); max-width: none; }
+  .hero-turbine { width: 100%; margin: 0; justify-self: end; }
+}
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 0.55rem; align-self: flex-start;
+  font-family: var(--display); font-weight: 500; font-size: 0.72rem;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft);
+  padding: 0.42rem 0.9rem; border: 1px solid var(--line-hi); border-radius: var(--r-pill);
+  background: rgba(255,255,255,0.02); margin: 0 0 1.6rem;
+}
+.pulse {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--red-bright);
+  box-shadow: 0 0 10px var(--red-bright); animation: pulse 2.2s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.8); } }
+
+.hero-title {
+  font-family: var(--display); font-weight: 700; margin: 0;
+  font-size: clamp(2.7rem, 11vw, 5rem); line-height: 0.9; letter-spacing: -0.045em;
+  max-width: 14ch;
+}
+.hero-title .accent { color: var(--red); }
+.hero-title .ln { display: block; }
+.hero-title strong { color: var(--red); font-weight: 700; }
+.hero-title em {
+  font-family: var(--body); font-style: italic; font-weight: 500;
+  color: var(--ink); font-size: 0.92em; letter-spacing: -0.01em;
+}
+
+.hero-foot {
+  margin-top: clamp(2.2rem, 5vw, 3.5rem);
+  padding-top: clamp(1.6rem, 3vw, 2.4rem);
+  border-top: 1px solid var(--line);
+  display: flex; flex-direction: column; gap: 2.2rem;
+}
+.hero-lead { font-size: 1.05rem; line-height: 1.6; color: var(--ink-soft); margin: 0 0 1.6rem; max-width: 54ch; }
+.hero-lead strong { color: var(--ink); font-weight: 600; }
+
+/* CTA row — three equal-weight paths */
+.cta-row { display: flex; flex-direction: column; gap: 0.7rem; }
+.cta {
+  display: flex; align-items: center; gap: 0.85rem; width: 100%;
+  padding: 0.85rem 1.1rem; border-radius: var(--r-md);
+  border: 1px solid var(--line-hi); background: var(--card);
+  transition: border-color 0.25s, background 0.25s, transform 0.25s var(--ease-out);
+  text-align: left;
+}
+.cta:hover { border-color: var(--line-warm); background: var(--card-hi); transform: translateY(-2px); }
+.cta:focus-visible { outline: 2px solid var(--red-bright); outline-offset: 3px; }
+.cta-ico {
+  flex-shrink: 0; width: 40px; height: 40px; border-radius: 10px;
+  display: grid; place-items: center; color: var(--ink-soft);
+  border: 1px solid var(--line); background: rgba(255,255,255,0.02);
+  transition: color 0.25s, border-color 0.25s, background 0.25s;
+}
+.cta-ico svg { width: 20px; height: 20px; }
+.cta:hover .cta-ico { color: var(--red-bright); border-color: var(--line-warm); background: var(--red-mist); }
+.cta-txt { display: flex; flex-direction: column; line-height: 1.25; }
+.cta-txt b { font-family: var(--display); font-weight: 500; font-size: 0.98rem; color: var(--ink); }
+.cta-txt small { color: var(--muted); font-size: 0.8rem; }
+
+.cta--solid {
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--red-deep), var(--red));
+  box-shadow: var(--shadow-red);
+}
+.cta--solid .cta-ico { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.18); color: #fff; }
+.cta--solid:hover { filter: brightness(1.08); border-color: transparent; }
+.cta--solid:hover .cta-ico { color: #fff; }
+
+/* Hero proof */
+.hero-proof {
+  border: 1px solid var(--line); border-radius: var(--r-lg);
+  padding: 1.4rem 1.5rem; background: var(--card);
+}
+.proof-label {
+  font-family: var(--display); font-weight: 500; font-size: 0.7rem;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin: 0 0 1rem;
+}
+.proof-list { list-style: none; margin: 0 0 1.2rem; padding: 0; }
+.proof-list li {
+  display: flex; align-items: baseline; gap: 0.65rem; padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--line); font-family: var(--display); font-weight: 500;
+}
+.proof-list li:last-child { border-bottom: none; }
+.proof-name { color: var(--ink); font-size: 1.02rem; }
+.proof-tag {
+  font-family: var(--body); font-style: italic; font-size: 0.78rem; color: var(--red-bright);
+}
+.proof-cert {
+  display: flex; align-items: center; gap: 0.6rem; padding-top: 1rem;
+  border-top: 1px solid var(--line); font-size: 0.88rem; color: var(--ink-soft);
+}
+.proof-cert b { color: var(--ink); font-weight: 600; }
+.cert-check {
+  flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%;
+  display: grid; place-items: center; color: var(--red-bright);
+  border: 1px solid var(--line-warm); background: var(--red-mist);
+}
+.cert-check svg { width: 13px; height: 13px; }
+
+@media (min-width: 760px) {
+  .cta-row { flex-direction: row; flex-wrap: wrap; }
+  .cta { width: auto; flex: 1 1 0; min-width: 220px; }
+}
+@media (min-width: 1000px) {
+  .hero-foot { flex-direction: row; align-items: flex-start; gap: 3rem; }
+  .hero-lead-col { flex: 1.5; }
+  .hero-proof { flex: 1; max-width: 340px; }
+  .cta-row { flex-direction: column; }
+  .cta { width: 100%; }
+}
+
+/* ---------- Qué automatizo ---------- */
+.auto-grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: 1fr; gap: 0.8rem;
+}
+@media (min-width: 640px) { .auto-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; } }
+.auto-card {
+  position: relative; padding: 1.5rem 1.4rem; border: 1px solid var(--line);
+  border-radius: var(--r-md); background: linear-gradient(180deg, var(--card), transparent);
+  transition: border-color 0.35s, transform 0.35s var(--ease-out);
+  overflow: hidden;
+}
+.auto-card::before {
+  content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 0;
+  background: linear-gradient(90deg, var(--red), transparent); transition: width 0.6s var(--ease-out);
+}
+.auto-card:hover { border-color: var(--line-warm); transform: translateY(-3px); }
+.auto-card:hover::before { width: 100%; }
+.auto-num {
+  font-family: var(--display); font-weight: 500; font-size: 0.78rem; color: var(--red-bright);
+  letter-spacing: 0.1em; display: block; margin-bottom: 0.9rem;
+}
+.auto-card h3 { font-family: var(--display); font-weight: 600; font-size: 1.18rem; margin: 0 0 0.5rem; letter-spacing: -0.015em; }
+.auto-card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+/* ---------- Showcase · Workflow ---------- */
+.workflow-canvas {
+  position: relative;
+  margin-top: clamp(1.4rem, 3vw, 2.2rem);
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background:
+    radial-gradient(120% 120% at 80% 0%, rgba(236,31,51,0.07), transparent 55%),
+    linear-gradient(180deg, var(--card), transparent);
+  overflow: hidden;
+}
+.workflow-canvas::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 38px 38px;
+  mask-image: radial-gradient(120% 100% at 50% 0%, #000 35%, transparent 85%);
+}
+.workflow-svg { position: relative; display: block; width: 100%; height: auto; }
+.wf-line { filter: drop-shadow(0 0 4px rgba(236,31,51,0.35)); }
+.wf-packet { filter: drop-shadow(0 0 6px rgba(255,80,99,0.8)); }
+
+.workflow-captions {
+  position: relative; list-style: none; margin: clamp(1rem,2vw,1.5rem) 0 0; padding: 0;
+  display: grid; gap: 0.7rem;
+}
+@media (min-width: 720px) { .workflow-captions { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1080px) { .workflow-captions { grid-template-columns: repeat(4, 1fr); gap: 0.9rem; } }
+.wf-cap {
+  display: flex; gap: 0.7rem; align-items: flex-start;
+  padding: 0.85rem 1rem; border: 1px solid var(--line); border-radius: var(--r-md);
+  background: rgba(255,255,255,0.015);
+}
+.wf-cap-tag {
+  flex-shrink: 0; font-family: var(--display); font-weight: 500; font-size: 0.72rem;
+  letter-spacing: 0.1em; color: var(--red-bright);
+  width: 26px; height: 26px; display: grid; place-items: center;
+  border: 1px solid var(--line-warm); border-radius: 7px; background: var(--red-mist);
+}
+.wf-cap p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; line-height: 1.5; }
+
+/* Animación: oculto sólo cuando hay motion permitido; sin JS todo es visible */
+html.anim .wf-line { stroke-dashoffset: 100; transition: stroke-dashoffset 0.85s var(--ease-out); }
+html.anim .wf-node { opacity: 0; transition: opacity 0.55s var(--ease-out); }
+html.anim .wf-packet { opacity: 0; transition: opacity 0.6s ease; }
+
+/* Sub-node (observabilidad): conexión punteada — aparece por opacidad */
+.wf-line-sub { filter: drop-shadow(0 0 3px rgba(236,31,51,0.4)); }
+html.anim .wf-line-sub { stroke-dashoffset: 0 !important; opacity: 0; transition: opacity 0.6s var(--ease-out); }
+html.anim .workflow-canvas.in .wf-line-sub { opacity: 0.85; }
+.wf-port { transition: none; }
+
+html.anim .workflow-canvas.in .wf-node { opacity: 1; }
+html.anim .workflow-canvas.in .wf-line { stroke-dashoffset: 0; }
+html.anim .workflow-canvas.in .wf-packet { opacity: 1; }
+
+/* Secuencia: nodo → línea → nodo … */
+html.anim .workflow-canvas.in .wf-node-1 { transition-delay: 0.10s; }
+html.anim .workflow-canvas.in .wf-line-1 { transition-delay: 0.45s; }
+html.anim .workflow-canvas.in .wf-node-2 { transition-delay: 0.55s; }
+html.anim .workflow-canvas.in .wf-line-2 { transition-delay: 0.90s; }
+html.anim .workflow-canvas.in .wf-node-3 { transition-delay: 1.00s; }
+html.anim .workflow-canvas.in .wf-line-3 { transition-delay: 1.35s; }
+html.anim .workflow-canvas.in .wf-node-4 { transition-delay: 1.50s; }
+html.anim .workflow-canvas.in .wf-line-4 { transition-delay: 1.85s; }
+html.anim .workflow-canvas.in .wf-node-5 { transition-delay: 2.00s; }
+html.anim .workflow-canvas.in .wf-line-5 { transition-delay: 2.35s; }
+html.anim .workflow-canvas.in .wf-node-6 { transition-delay: 2.50s; }
+html.anim .workflow-canvas.in .wf-packet { transition-delay: 2.7s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .wf-packet { display: none; }
+}
+
+/* ---------- FAQ ---------- */
+.section--faq { background: linear-gradient(180deg, transparent, rgba(236,31,51,0.022) 50%, transparent); }
+.faq { display: grid; gap: 0.6rem; max-width: 800px; }
+.faq details {
+  border: 1px solid var(--line); border-radius: var(--r-md); background: var(--card);
+  transition: border-color 0.3s, background 0.3s; overflow: hidden;
+}
+.faq details[open] { border-color: var(--line-warm); background: rgba(236,31,51,0.04); }
+.faq summary {
+  list-style: none; cursor: pointer; display: flex; align-items: center; gap: 1rem;
+  padding: 1.1rem 1.3rem;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary h3 {
+  font-family: var(--display); font-weight: 500; font-size: 1.05rem; margin: 0; flex: 1;
+  letter-spacing: -0.01em; color: var(--ink);
+}
+.faq-sign { position: relative; flex-shrink: 0; width: 16px; height: 16px; }
+.faq-sign::before, .faq-sign::after {
+  content: ""; position: absolute; background: var(--red-bright); border-radius: 1px;
+  transition: transform 0.3s var(--ease-out), opacity 0.3s;
+}
+.faq-sign::before { top: 7px; left: 0; width: 16px; height: 2px; }
+.faq-sign::after { left: 7px; top: 0; width: 2px; height: 16px; }
+.faq details[open] .faq-sign::after { transform: scaleY(0); opacity: 0; }
+.faq-body { padding: 0 1.3rem 1.2rem; }
+.faq-lead { margin: 0 0 0.7rem; color: var(--ink); font-weight: 500; }
+.faq-body p { margin: 0 0 0.6rem; color: var(--muted); font-size: 0.95rem; }
+.faq-body p:last-child { margin-bottom: 0; }
+.faq-body em { color: var(--red-bright); font-style: italic; }
+
+/* ---------- Contacto ---------- */
+.section--contacto { padding-bottom: clamp(4rem, 8vw, 7rem); }
+.closer {
+  max-width: 760px; margin: 0 auto; text-align: center;
+  padding: clamp(2.2rem, 5vw, 3.4rem) clamp(1.2rem, 4vw, 2.6rem);
+  border: 1px solid var(--line-warm); border-radius: var(--r-lg);
+  background:
+    radial-gradient(ellipse at 0% 100%, rgba(236,31,51,0.16), transparent 60%),
+    radial-gradient(ellipse at 100% 0%, rgba(236,31,51,0.08), transparent 60%),
+    linear-gradient(180deg, var(--card), transparent);
+}
+.closer .kicker { justify-content: center; }
+.closer .kicker::before { display: none; }
+.closer h2 { margin-bottom: 1rem; }
+.closer-lead { color: var(--ink-soft); max-width: 54ch; margin: 0 auto; }
+.closer-cta {
+  margin-top: 2rem; display: flex; flex-direction: column; gap: 0.7rem;
+  max-width: 380px; margin-inline: auto;
+}
+.closer-cta .cta { justify-content: center; }
+.closer-cta .cta-txt { flex-direction: row; }
+.closer-meta { margin-top: 1.6rem; color: var(--muted); font-size: 0.9rem; }
+.closer-meta a { color: var(--ink-soft); border-bottom: 1px solid var(--line); transition: color 0.2s, border-color 0.2s; }
+.closer-meta a:hover { color: var(--red-bright); border-color: var(--red); }
+
+@media (min-width: 560px) {
+  .closer-cta { flex-direction: row; max-width: none; justify-content: center; flex-wrap: wrap; }
+  .closer-cta .cta { flex: 0 1 auto; }
+}
+
+/* ---------- Footer ---------- */
+.foot { border-top: 1px solid var(--line); padding: 2.2rem 0 3rem; }
+.foot-inner { display: flex; flex-direction: column; gap: 0.5rem; }
+.foot-brand { display: inline-flex; align-items: center; gap: 0.55rem; font-family: var(--display); font-weight: 600; color: var(--ink); }
+.foot-meta { margin: 0; color: var(--faint); font-size: 0.85rem; }
+.foot-updated { color: var(--muted); }
+
+/* ---------- Sobre Franco ---------- */
+.sobre-grid {
+  display: grid; grid-template-columns: 1fr; gap: clamp(1.8rem, 4vw, 3rem);
+  align-items: start;
+}
+.sobre-photo { margin: 0; position: relative; }
+.sobre-photo img {
+  width: 100%; height: auto; aspect-ratio: 11 / 13; object-fit: cover;
+  border-radius: var(--r-lg); border: 1px solid var(--line-warm);
+  background: var(--elev);
+  filter: grayscale(0.15) contrast(1.02);
+  box-shadow: var(--shadow-soft, 0 18px 50px -25px rgba(0,0,0,0.6));
+}
+.sobre-photo::after {
+  content: ""; position: absolute; inset: 0; border-radius: var(--r-lg);
+  background: linear-gradient(160deg, transparent 55%, rgba(236,31,51,0.18));
+  pointer-events: none;
+}
+.sobre-photo figcaption {
+  position: absolute; left: 14px; bottom: 14px; z-index: 1;
+}
+.sobre-loc {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  padding: 0.45rem 0.85rem; border-radius: var(--r-pill);
+  background: rgba(8,8,10,0.72); backdrop-filter: blur(6px);
+  border: 1px solid var(--line-warm); color: var(--ink);
+  font-size: 0.82rem; font-weight: 500;
+}
+.sobre-loc svg { width: 15px; height: 15px; color: var(--red-bright); }
+
+.sobre-lead { font-size: 1.12rem; line-height: 1.55; color: var(--ink); margin: 0 0 1rem; font-weight: 500; }
+.sobre-body > p { color: var(--ink-soft); line-height: 1.7; margin: 0 0 1.6rem; max-width: 60ch; }
+.sobre-body > p:last-of-type { margin-bottom: 0; }
+
+.trayectoria { list-style: none; margin: 0 0 1.8rem; padding: 0; display: flex; flex-direction: column; }
+.trayectoria li {
+  display: grid; grid-template-columns: 92px 1fr; gap: 1rem;
+  padding: 1rem 0; border-top: 1px solid var(--line);
+}
+.trayectoria li:first-child { border-top: none; padding-top: 0; }
+.tray-year {
+  font-family: var(--mono, monospace); font-size: 0.78rem; color: var(--red-bright);
+  letter-spacing: 0.02em; padding-top: 0.15rem;
+}
+.tray-info { display: flex; flex-direction: column; gap: 0.25rem; }
+.tray-info b { font-family: var(--display); font-weight: 600; color: var(--ink); font-size: 1rem; }
+.tray-info span { color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+
+.sobre-certs { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.cert-pill {
+  font-family: var(--display); font-weight: 500; font-size: 0.8rem;
+  padding: 0.4rem 0.8rem; border-radius: var(--r-pill);
+  border: 1px solid var(--line); background: rgba(255,255,255,0.02); color: var(--ink-soft);
+}
+.cert-pill--n8n { border-color: var(--line-warm); background: var(--red-mist); color: var(--ink); }
+
+@media (min-width: 800px) {
+  .sobre-grid { grid-template-columns: minmax(280px, 380px) 1fr; gap: clamp(2.4rem, 4vw, 3.6rem); }
+  .sobre-photo { position: sticky; top: calc(var(--nav-h, 68px) + 1.4rem); }
+}
+
+/* ---------- Bot FAB ---------- */
+.bot-fab {
+  position: fixed; right: 1rem; bottom: 1rem; z-index: 90;
+  display: inline-flex; align-items: center; gap: 0.55rem;
+  padding: 0.8rem 1.2rem; border-radius: var(--r-pill);
+  font-family: var(--display); font-weight: 500; font-size: 0.92rem; color: #fff;
+  background: linear-gradient(135deg, var(--red-deep), var(--red));
+  box-shadow: var(--shadow-red); transition: transform 0.25s var(--ease-out), filter 0.25s;
+}
+.bot-fab:hover { transform: translateY(-2px); filter: brightness(1.08); }
+.bot-fab-dot { width: 8px; height: 8px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 0 rgba(255,255,255,0.6); animation: botblink 2s ease-in-out infinite; }
+@keyframes botblink { 0%,100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.6); } 50% { box-shadow: 0 0 0 7px rgba(255,255,255,0); } }
+
+/* ---------- Chat drawer ---------- */
+.chat-scrim { position: fixed; inset: 0; z-index: 110; background: rgba(0,0,0,0.55); opacity: 0; transition: opacity 0.26s; backdrop-filter: blur(2px); }
+.chat-scrim.open { opacity: 1; }
+.chat {
+  position: fixed; z-index: 120; right: 0; bottom: 0;
+  width: min(420px, 100%); height: min(620px, 86vh);
+  display: flex; flex-direction: column;
+  background: var(--elev); border: 1px solid var(--line-hi); border-radius: var(--r-lg) var(--r-lg) 0 0;
+  box-shadow: var(--shadow-soft);
+  transform: translateY(102%); transition: transform 0.3s var(--ease-out);
+}
+.chat.open { transform: translateY(0); }
+@media (min-width: 560px) { .chat { right: 1rem; bottom: 1rem; border-radius: var(--r-lg); } }
+
+.chat-head { display: flex; align-items: center; gap: 0.7rem; padding: 1rem 1.1rem; border-bottom: 1px solid var(--line); }
+.chat-avatar { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; font-family: var(--display); font-weight: 700; color: #fff; background: linear-gradient(150deg, var(--red-bright), var(--red-deep)); }
+.chat-id { flex: 1; }
+.chat-id p { margin: 0; font-family: var(--display); font-weight: 600; font-size: 0.98rem; }
+.chat-id small { color: var(--muted); font-size: 0.78rem; display: inline-flex; align-items: center; gap: 0.4rem; }
+.chat-live { width: 7px; height: 7px; border-radius: 50%; background: #2ec26a; box-shadow: 0 0 8px #2ec26a; }
+.chat-x { width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center; color: var(--muted); transition: color 0.2s, background 0.2s; }
+.chat-x:hover { color: var(--ink); background: var(--card-hi); }
+.chat-x svg { width: 18px; height: 18px; }
+
+.chat-body { flex: 1; overflow-y: auto; padding: 1.2rem 1.1rem; display: flex; flex-direction: column; gap: 0.7rem; }
+.msg { max-width: 84%; padding: 0.7rem 0.95rem; border-radius: 14px; font-size: 0.92rem; line-height: 1.5; }
+.msg p { margin: 0; }
+.msg--bot { align-self: flex-start; background: var(--card-hi); border: 1px solid var(--line); border-bottom-left-radius: 5px; color: var(--ink-soft); }
+.msg--bot em { color: var(--red-bright); font-style: italic; }
+.msg--me { align-self: flex-end; background: linear-gradient(135deg, var(--red-deep), var(--red)); color: #fff; border-bottom-right-radius: 5px; }
+
+/* Indicador "escribiendo…" */
+.msg--typing { padding-block: 0.85rem; }
+.typing-dots { display: inline-flex; gap: 4px; align-items: center; }
+.typing-dots i {
+  width: 6px; height: 6px; border-radius: 50%; background: var(--red-bright);
+  display: inline-block; opacity: 0.4; animation: typingBounce 1.2s var(--ease-in-out, ease-in-out) infinite;
+}
+.typing-dots i:nth-child(2) { animation-delay: 0.18s; }
+.typing-dots i:nth-child(3) { animation-delay: 0.36s; }
+@keyframes typingBounce {
+  0%, 60%, 100% { opacity: 0.35; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-3px); }
+}
+.chat-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.4rem; }
+.chat-chips button {
+  font-size: 0.82rem; padding: 0.5rem 0.85rem; border-radius: var(--r-pill);
+  border: 1px solid var(--line-warm); background: var(--red-mist); color: var(--ink);
+  transition: background 0.2s, transform 0.2s;
+}
+.chat-chips button:hover { background: rgba(236,31,51,0.26); transform: translateY(-1px); }
+/* Chip de acción (conversión) — atajo directo, no pregunta */
+.chat-chips button.chip-action {
+  background: linear-gradient(135deg, var(--red-deep), var(--red));
+  border-color: transparent; color: #fff; font-weight: 600;
+  width: 100%; justify-content: center; text-align: center; margin-top: 0.15rem;
+}
+.chat-chips button.chip-action:hover { filter: brightness(1.08); background: linear-gradient(135deg, var(--red-deep), var(--red)); }
+
+.chat-input { display: flex; gap: 0.5rem; padding: 0.8rem; border-top: 1px solid var(--line); }
+.chat-input input {
+  flex: 1; padding: 0.7rem 0.95rem; border-radius: var(--r-pill); border: 1px solid var(--line-hi);
+  background: var(--bg-1); color: var(--ink); font-family: var(--body); font-size: 0.92rem;
+}
+.chat-input input:focus { outline: none; border-color: var(--red); }
+.chat-input button { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; color: #fff; background: linear-gradient(135deg, var(--red-deep), var(--red)); transition: filter 0.2s; }
+.chat-input button:hover { filter: brightness(1.1); }
+.chat-input button svg { width: 19px; height: 19px; }
+.chat-note { display: block; text-align: center; padding: 0 0 0.8rem; color: var(--faint); font-size: 0.72rem; }
+
+/* =====================================================================
+   Animaciones quirúrgicas — base = visible (sin JS / sin motion = OK)
+   ===================================================================== */
+.anim .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.anim .reveal.in { opacity: 1; transform: none; }
+
+.anim .reveal-stagger > * { opacity: 0; transform: translateY(20px); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
+.anim .reveal-stagger.in > * { opacity: 1; transform: none; }
+.anim .reveal-stagger.in > *:nth-child(1) { transition-delay: 0.04s; }
+.anim .reveal-stagger.in > *:nth-child(2) { transition-delay: 0.12s; }
+.anim .reveal-stagger.in > *:nth-child(3) { transition-delay: 0.2s; }
+.anim .reveal-stagger.in > *:nth-child(4) { transition-delay: 0.28s; }
+.anim .reveal-stagger.in > *:nth-child(5) { transition-delay: 0.36s; }
+
+/* Hero headline: line-by-line surgical rise (CSS-only, content always in DOM) */
+.anim .hero-title .ln { opacity: 0; transform: translateY(0.5em); animation: lineIn 0.9s var(--ease-out) forwards; }
+.anim .hero-title .ln:nth-child(1) { animation-delay: 0.08s; }
+.anim .hero-title .ln:nth-child(2) { animation-delay: 0.2s; }
+.anim .hero-title .ln:nth-child(3) { animation-delay: 0.32s; }
+.anim .hero-title .ln:nth-child(4) { animation-delay: 0.44s; }
+.anim .hero .eyebrow.reveal { animation: lineIn 0.7s var(--ease-out) forwards; }
+@keyframes lineIn { to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
+
+/* =====================================================================
+   v2 — Manifiesto · Método · Stack · Trayectoria · Antes de la llamada
+   ===================================================================== */
+
+/* ---------- Manifiesto ---------- */
+.manif-grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: 1fr; gap: 1px;
+  background: var(--line); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden;
+}
+.manif-card {
+  position: relative; padding: 1.5rem 1.5rem 1.6rem; background: var(--bg-1);
+  transition: background 0.35s;
+}
+.manif-card:hover { background: var(--elev); }
+.manif-num {
+  font-family: var(--mono, monospace); font-size: 0.78rem; color: var(--red-bright);
+  letter-spacing: 0.08em; display: block; margin-bottom: 0.7rem;
+}
+.manif-card h3 { font-family: var(--display); font-weight: 600; font-size: 1.08rem; margin: 0 0 0.5rem; letter-spacing: -0.015em; color: var(--ink); }
+.manif-card p { margin: 0; color: var(--muted); font-size: 0.94rem; line-height: 1.55; }
+.manif-quote {
+  margin: var(--head-gap) 0 0; padding: clamp(1.6rem, 3vw, 2.4rem);
+  border: 1px solid var(--line-warm); border-radius: var(--r-lg);
+  background: radial-gradient(ellipse at 0% 0%, rgba(236,31,51,0.10), transparent 60%);
+}
+.manif-quote p { margin: 0; color: var(--ink-soft); font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.5; font-family: var(--display); font-weight: 400; }
+.manif-quote .manif-quote-tail { margin-top: 1rem; color: var(--muted); font-size: 1rem; font-family: var(--body); }
+@media (min-width: 680px) { .manif-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1000px) { .manif-grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+/* ---------- Método ---------- */
+.fase-grid { list-style: none; margin: 0 0 1.6rem; padding: 0; display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.fase-card {
+  padding: 1.5rem 1.5rem 1.6rem; border: 1px solid var(--line); border-radius: var(--r-lg);
+  background: linear-gradient(180deg, var(--card), transparent);
+  transition: border-color 0.35s, transform 0.35s var(--ease-out);
+}
+.fase-card:hover { border-color: var(--line-warm); transform: translateY(-3px); }
+.fase-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.9rem; }
+.fase-tag { font-family: var(--display); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red-bright); }
+.fase-dur { font-size: 0.8rem; color: var(--muted); }
+.fase-card h3 { font-family: var(--display); font-weight: 600; font-size: 1.3rem; margin: 0 0 0.6rem; letter-spacing: -0.02em; color: var(--ink); }
+.fase-card p { margin: 0 0 0.8rem; color: var(--muted); font-size: 0.94rem; line-height: 1.55; }
+.fase-entrega { color: var(--ink-soft) !important; font-size: 0.9rem !important; margin: 0 !important; padding-top: 0.6rem; border-top: 1px solid var(--line); }
+.fase-entrega b { color: var(--red-bright); font-weight: 600; }
+.garantias { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.garantia { padding: 1.3rem 1.4rem; border: 1px dashed var(--line-warm); border-radius: var(--r-md); background: rgba(236,31,51,0.03); }
+.garantia h3 { font-family: var(--display); font-weight: 600; font-size: 1rem; margin: 0 0 0.4rem; color: var(--ink); }
+.garantia p { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.5; }
+@media (min-width: 760px) { .fase-grid { grid-template-columns: 1fr 1fr; } .garantias { grid-template-columns: 1fr 1fr 1fr; } }
+
+/* ---------- Stack ---------- */
+.stack-grid { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; }
+.stack-col { padding: 1.5rem 1.4rem; background: var(--bg-1); }
+.stack-col h3 { font-family: var(--display); font-weight: 600; font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red-bright); margin: 0 0 1rem; }
+.stack-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+.stack-col li { color: var(--ink-soft); font-size: 0.92rem; padding-left: 1rem; position: relative; }
+.stack-col li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 5px; height: 5px; border-radius: 50%; background: var(--red); }
+.stack-note { color: var(--faint); font-size: 0.78rem; }
+@media (min-width: 640px) { .stack-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1000px) { .stack-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* ---------- Trayectoria ---------- */
+.trabajo-grid { display: grid; grid-template-columns: 1fr; gap: clamp(1.8rem, 4vw, 3rem); align-items: start; }
+.trabajo-body { min-width: 0; }
+.trabajo-meta { display: grid; grid-template-columns: 1fr; gap: 1.1rem; margin: 1.8rem 0; padding: 1.4rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.meta-label { font-family: var(--display); font-weight: 500; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 0.4rem; }
+.meta-block p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; line-height: 1.5; }
+.trabajo-cv { margin: 1.4rem 0 0; font-size: 0.95rem; color: var(--muted); }
+.trabajo-cv a { color: var(--red-bright); border-bottom: 1px solid var(--line-warm); }
+.trabajo-cv a:hover { border-color: var(--red); }
+.charlas { margin: clamp(1.8rem, 4vw, 2.6rem) 0 0; padding: 1.5rem clamp(1.4rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: var(--r-lg); background: linear-gradient(180deg, var(--card), transparent); }
+.charlas p { margin: 0.4rem 0 0; color: var(--ink-soft); line-height: 1.6; max-width: 70ch; }
+.charlas strong { color: var(--ink); font-weight: 600; }
+@media (min-width: 800px) {
+  .trabajo-grid { grid-template-columns: minmax(280px, 360px) 1fr; gap: clamp(2.4rem, 4vw, 3.6rem); }
+  .trabajo-meta { grid-template-columns: 1fr 1fr 1fr; }
+  .section--trabajo .sobre-photo { position: sticky; top: calc(var(--nav-h, 68px) + 1.4rem); }
+}
+
+/* ---------- Antes de la llamada ---------- */
+.closer-narrow { max-width: 760px; }
+.section--antes h2 { margin-bottom: 1.2rem; }
+.section--antes p { color: var(--ink-soft); line-height: 1.7; margin: 0 0 1rem; max-width: 68ch; }
+.section--antes em { color: var(--red-bright); font-style: italic; }
+
+
+</style>
+
+  <!-- ===== Structured data · Schema.org (raw, crawler-readable) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://n8n.hanemann.ar/#franco",
+        "name": "Franco E. Hanemann",
+        "givenName": "Franco",
+        "familyName": "Hanemann",
+        "jobTitle": "Consultor de automatización con n8n e IA · Full Stack Senior",
+        "description": "Consultor independiente de automatización empresarial con n8n e inteligencia artificial. Más de veinte años en sistemas, ERPs e infraestructura crítica. Certificado n8n Basic + Advanced 2025.",
+        "url": "https://n8n.hanemann.ar/",
+        "email": "franco@hanemann.ar",
+        "image": "https://cv.hanemann.ar/profile.png",
+        "telephone": "+5492235351875",
+        "nationality": [
+          { "@type": "Country", "name": "Argentina" },
+          { "@type": "Country", "name": "Italia" }
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad Tecnológica Nacional (UTN)"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "AGNOSTIC"
+        },
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Mar del Plata, Buenos Aires, Argentina"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mar del Plata",
+          "addressRegion": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "knowsAbout": [
+          "n8n",
+          "Automatización de procesos",
+          "Inteligencia artificial aplicada",
+          "Agentes de IA",
+          "Integración de sistemas",
+          "Desarrollo full stack",
+          "ERP",
+          "n8n self-hosted",
+          "C# / .NET / .NET Core",
+          "SQL Server",
+          "React",
+          "TypeScript",
+          "Python",
+          "Google Analytics 4"
+        ],
+        "knowsLanguage": ["es", "pt", "en"],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "certification",
+            "name": "n8n Basic Course Certification 2025"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "certification",
+            "name": "n8n Advanced Course Certification 2025"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "certification",
+            "name": "HashiCorp 2025"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "certification",
+            "name": "ElasticSearch 2025"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "degree",
+            "name": "Técnico Universitario de Programación (UTN, 2019)"
+          }
+        ],
+        "sameAs": [
+          "https://cv.hanemann.ar",
+          "https://www.linkedin.com/in/franco-hanemann"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://n8n.hanemann.ar/#service",
+        "name": "Franco Hanemann — Consultoría de automatización con n8n e IA",
+        "description": "Consultoría y desarrollo de automatizaciones con n8n y agentes de inteligencia artificial para PyMEs argentinas, startups internacionales y agencias que tercerizan. Diagnóstico, diseño, construcción y gobernanza, sin vendor lock-in.",
+        "url": "https://n8n.hanemann.ar/",
+        "provider": { "@id": "https://n8n.hanemann.ar/#franco" },
+        "founder": { "@id": "https://n8n.hanemann.ar/#franco" },
+        "email": "franco@hanemann.ar",
+        "serviceType": ["Automatización con n8n", "Agentes de IA", "Integración de sistemas", "Desarrollo a medida"],
+        "areaServed": [
+          { "@type": "Country", "name": "Argentina" },
+          { "@type": "Place", "name": "LATAM" },
+          { "@type": "Place", "name": "Remoto / Worldwide" }
+        ],
+        "availableLanguage": ["es", "pt", "en"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mar del Plata",
+          "addressRegion": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "priceRange": "$$",
+        "slogan": "Automatización que integra, no que improvisa."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://n8n.hanemann.ar/#website",
+        "url": "https://n8n.hanemann.ar/",
+        "name": "Franco Hanemann · Automatización con n8n e IA",
+        "inLanguage": "es-AR",
+        "publisher": { "@id": "https://n8n.hanemann.ar/#franco" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://n8n.hanemann.ar/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Quién hace automatización con n8n en Argentina?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Franco Hanemann, consultor independiente con base en Mar del Plata, certificado n8n Basic y Advanced 2025. Llego con más de veinte años de experiencia en sistemas, ERPs e infraestructura crítica. Trabajo con PyMEs argentinas, startups internacionales y agencias que tercerizan desarrollo, en español, portugués o inglés."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta automatizar procesos con n8n?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del alcance del proyecto, no de las horas. En la primera conversación salís con un rango concreto. Las tarifas se ajustan al contexto: Argentina en pesos con ajuste, LATAM y exportación en dólares, Europa en euros facturando desde Italia. El diagnóstico se cobra, porque el diagnóstico es el trabajo —no una llamada comercial."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo contrato un consultor de n8n?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Por tres vías que pesan lo mismo: agendás una llamada, me escribís por WhatsApp o hablás con el bot del sitio. El bot, además, es una demostración en vivo de lo que construyo. En esa primera conversación me contás dónde está tu operación y te digo cómo la abordaría: a veces con un proyecto, a veces con una recomendación distinta."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué n8n y no otra herramienta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Por control técnico, flexibilidad de arquitectura, self-hosting y un mejor manejo de los escenarios con IA. Para casos simples hay alternativas más simples, y si el tuyo entra ahí, te lo señalo. n8n se destaca cuando la operación crece y necesitás ver todo con claridad: qué corre, cuándo y qué sucede si algo falla."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Quedo atado al proveedor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Lo que diseño te queda documentado y corriendo en tu propia infraestructura, en formatos abiertos. Si más adelante querés cambiar de proveedor o internalizarlo, otro técnico puede leer lo que dejé y continuar. Al ser n8n, lo instalás en el servidor que prefieras, sin depender de mí."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://n8n.hanemann.ar/#webpage",
+        "url": "https://n8n.hanemann.ar/",
+        "name": "Consultor n8n e IA en Argentina · Franco Hanemann",
+        "isPartOf": { "@id": "https://n8n.hanemann.ar/#website" },
+        "about": { "@id": "https://n8n.hanemann.ar/#franco" },
+        "author": { "@id": "https://n8n.hanemann.ar/#franco" },
+        "inLanguage": "es-AR",
+        "datePublished": "2025-09-01",
+        "dateModified": "2026-06-13",
+        "primaryImageOfPage": "https://n8n.hanemann.ar/og.png",
+        "breadcrumb": { "@id": "https://n8n.hanemann.ar/#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://n8n.hanemann.ar/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://n8n.hanemann.ar/" },
+          { "@type": "ListItem", "position": 2, "name": "Qué automatizo", "item": "https://n8n.hanemann.ar/#automatizar" },
+          { "@type": "ListItem", "position": 3, "name": "Preguntas", "item": "https://n8n.hanemann.ar/#preguntas" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://n8n.hanemann.ar/#svc-flujos",
+        "name": "Flujos de automatización contra bases de datos con n8n",
+        "description": "Orquestación entre ERP, CRM y sistemas legacy con n8n, sin reescribir lo que ya funciona.",
+        "serviceType": "Automatización de procesos con n8n",
+        "provider": { "@id": "https://n8n.hanemann.ar/#franco" },
+        "areaServed": [{ "@type": "Country", "name": "Argentina" }, { "@type": "Place", "name": "Remoto / Worldwide" }]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://n8n.hanemann.ar/#svc-agentes",
+        "name": "Agentes de IA con límites (boundaries, fallback, logging)",
+        "description": "Chatbots y agentes de IA gobernables: límites declarados, fallback, logging y un dueño asignado. No una caja negra.",
+        "serviceType": "Agentes de IA",
+        "provider": { "@id": "https://n8n.hanemann.ar/#franco" },
+        "areaServed": [{ "@type": "Country", "name": "Argentina" }, { "@type": "Place", "name": "Remoto / Worldwide" }]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://n8n.hanemann.ar/#svc-reportes",
+        "name": "Respuestas y reportes automáticos con n8n",
+        "description": "Notificaciones, respuestas a clientes y reportes que se arman solos, con gestión de errores desde el día uno.",
+        "serviceType": "Automatización de reportes y notificaciones",
+        "provider": { "@id": "https://n8n.hanemann.ar/#franco" },
+        "areaServed": [{ "@type": "Country", "name": "Argentina" }, { "@type": "Place", "name": "Remoto / Worldwide" }]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://n8n.hanemann.ar/#svc-integracion",
+        "name": "Integración entre servicios (webhooks, OAuth, colas, APIs)",
+        "description": "Conexión de sistemas que hoy se operan a mano, con trazabilidad de punta a punta.",
+        "serviceType": "Integración de sistemas",
+        "provider": { "@id": "https://n8n.hanemann.ar/#franco" },
+        "areaServed": [{ "@type": "Country", "name": "Argentina" }, { "@type": "Place", "name": "Remoto / Worldwide" }]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Atmospheric background (decorative, content lives in DOM regardless) -->
+  <div class="atmos" aria-hidden="true"></div>
+  <div class="grid-veil" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="top" id="top">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Inicio — Franco Hanemann">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span class="brand-word">Franco E. Hanemann.</span>
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#automatizar">Qué automatizo</a>
+        <a href="#showcase">Workflow</a>
+        <a href="#sobre">Sobre Franco</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="nav-cta" href="#contacto">Conversemos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+
+        <div class="hero-head">
+          <p class="eyebrow">
+            <span class="pulse" aria-hidden="true"></span>
+            n8n · IA aplicada · Mar del Plata, Argentina
+          </p>
+        </div>
+
+        <div class="hero-title-wrap">
+          <h1 class="hero-title" id="hero-title">
+            <span class="ln reveal">Automatización</span>
+            <span class="ln reveal">con <span class="accent">n8n</span> e IA para tu empresa</span>
+          </h1>
+          <div class="hero-turbine" aria-hidden="true" title="Trece aspas, un solo motor">
+            <canvas id="hero-turbina" width="320" height="320"></canvas>
+          </div>
+        </div>
+
+        <div class="hero-foot">
+          <div class="hero-lead-col reveal">
+            <p class="hero-lead">Hago automatizaciones con n8n e IA que después tu equipo maneja sin depender de mí. Soy una persona, no una agencia. Desde Mar del Plata, trabajo con Argentina, LATAM y el mundo.</p>
+
+            <div class="cta-row" role="group" aria-label="Tres formas de empezar la conversación">
+              <button class="cta" type="button" data-cta="call" aria-haspopup="dialog" aria-controls="chat">
+                <span class="cta-ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/><path d="M8.5 14.5l2.2 2.2 4-4.4"/></svg>
+                </span>
+                <span class="cta-txt"><b>Agendá una llamada</b><small>te la coordina el bot</small></span>
+              </button>
+              <a class="cta" href="https://wa.me/5492235351875?text=Hola%20Franco%2C%20quiero%20automatizar%20procesos%20con%20n8n" target="_blank" rel="noopener" data-cta="whatsapp">
+                <span class="cta-ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2.4c-5.3 0-9.6 4.3-9.6 9.6 0 1.7.45 3.34 1.3 4.8L2.4 21.6l4.94-1.3a9.55 9.55 0 0 0 4.7 1.2h.01c5.3 0 9.6-4.3 9.6-9.6 0-2.57-1-4.98-2.81-6.8a9.54 9.54 0 0 0-6.8-2.7Zm0 1.6c2.13 0 4.13.83 5.64 2.34a7.95 7.95 0 0 1 2.33 5.66c0 4.41-3.59 8-8 8a7.94 7.94 0 0 1-4.04-1.1l-.29-.17-2.93.77.78-2.86-.19-.3a7.93 7.93 0 0 1-1.22-4.24c0-4.41 3.59-8 8-8Zm-2.6 3.96c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.39-.4-.54-.41h-.46Z"/></svg>
+                </span>
+                <span class="cta-txt"><b>Escribime por WhatsApp</b><small>respuesta directa</small></span>
+              </a>
+              <button class="cta" type="button" data-cta="bot" aria-haspopup="dialog" aria-controls="chat" id="open-chat">
+                <span class="cta-ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3 20.5l1.45-5.05A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg>
+                </span>
+                <span class="cta-txt"><b>Hablá con el bot</b><small>demo en vivo del servicio</small></span>
+              </button>
+            </div>
+          </div>
+
+          <aside class="hero-proof reveal" aria-label="Prueba social">
+            <p class="proof-label">En producción con</p>
+            <ul class="proof-list">
+              <li><span class="proof-name">Hojas Verdes</span><span class="proof-tag">caso principal</span></li>
+              <li><span class="proof-name">Distribuidora Acero</span></li>
+              <li><span class="proof-name">Costa Atlántica Turismo</span></li>
+            </ul>
+            <div class="proof-cert">
+              <span class="cert-check" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              </span>
+              Certificado n8n <b>Basic + Advanced</b> 2025
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ QUÉ AUTOMATIZO (question heading) ============ -->
+    <section class="section" id="automatizar" aria-labelledby="auto-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="kicker">Qué hago</span>
+          <h2 id="auto-title">¿Qué procesos puedo automatizar en tu empresa?</h2>
+          <p class="sec-sub">Primero miro qué te está frenando de verdad; recién después vemos si n8n o un agente de IA es la respuesta. La herramienta sale del problema, nunca al revés. Y si tu caso se resuelve mejor sin automatizar nada, te lo digo de frente —antes de que pongas un peso.</p>
+        </header>
+        <ul class="auto-grid reveal-stagger">
+          <li class="auto-card">
+            <span class="auto-num">01</span>
+            <h3>Flujos contra tus bases de datos</h3>
+            <p>Conecto tu ERP, tu CRM y eso viejo que nadie quiere tocar. Lo que ya anda, lo dejo andando —no vengo a romper lo que funciona.</p>
+          </li>
+          <li class="auto-card">
+            <span class="auto-num">02</span>
+            <h3>Agentes de IA con límites</h3>
+            <p>Chatbots y agentes que no quedan sueltos: saben hasta dónde llegar, qué hacer si algo falla, y dejan registro de todo. Nada de caja negra que después no sabés qué hizo.</p>
+          </li>
+          <li class="auto-card">
+            <span class="auto-num">03</span>
+            <h3>Respuestas y reportes automáticos</h3>
+            <p>Avisos, respuestas a clientes y reportes que se arman solos mientras vos hacés otra cosa. Y si algo se rompe, está pensado para avisarte, no para fallar en silencio.</p>
+          </li>
+          <li class="auto-card">
+            <span class="auto-num">04</span>
+            <h3>Integración entre servicios</h3>
+            <p>Todo eso que hoy copiás y pegás a mano entre una app y otra, lo enchufo. Webhooks, APIs y demás son problema mío, no tuyo.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SHOWCASE — Workflow animado al scroll ============ -->
+    <section class="section section--showcase" id="showcase" aria-labelledby="showcase-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="kicker">Cómo se ve por dentro</span>
+          <h2 id="showcase-title">¿Qué te entrego cuando automatizo un proceso?</h2>
+          <p class="sec-sub">No te entrego un PDF lleno de promesas: te entrego un workflow de verdad, andando, con cada paso y cada control a la vista. Mirá cómo se conecta todo.</p>
+        </header>
+
+        <div class="workflow-canvas reveal" aria-hidden="true">
+          <svg viewBox="0 0 1100 500" preserveAspectRatio="xMidYMid meet" class="workflow-svg" role="img" aria-label="Diagrama de un workflow n8n: un trigger de webhook valida el esquema, pasa a un agente de IA con limites que se integra con un sistema ERP legacy y emite notificaciones, con un sub-nodo de observabilidad y logging.">
+            <defs>
+              <linearGradient id="wfLine" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#8e0d18" stop-opacity="0.5"/>
+                <stop offset="55%" stop-color="#ec1f33" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#ff5063" stop-opacity="1"/>
+              </linearGradient>
+              <linearGradient id="wfNode" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="rgba(255,255,255,0.06)"/>
+                <stop offset="100%" stop-color="rgba(255,255,255,0.015)"/>
+              </linearGradient>
+              <filter id="wfGlow" x="-60%" y="-60%" width="220%" height="220%">
+                <feGaussianBlur stdDeviation="4" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+
+            <!-- Conexiones puerto-derecho -> puerto-izquierdo (estilo n8n) -->
+            <path id="wfp1" class="wf-line wf-line-1" d="M 205 176 C 252 176, 253 176, 300 176" stroke="url(#wfLine)" stroke-width="2.4" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/>
+            <path id="wfp2" class="wf-line wf-line-2" d="M 485 176 C 532 176, 533 176, 580 176" stroke="url(#wfLine)" stroke-width="2.4" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/>
+            <path id="wfp3" class="wf-line wf-line-3" d="M 765 176 C 818 176, 820 96, 860 96" stroke="url(#wfLine)" stroke-width="2.4" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/>
+            <path id="wfp4" class="wf-line wf-line-4" d="M 765 176 C 818 176, 820 326, 860 326" stroke="url(#wfLine)" stroke-width="2.4" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/>
+            <path id="wfp5" class="wf-line wf-line-5 wf-line-sub" d="M 672 360 C 672 312, 672 300, 672 248" stroke="url(#wfLine)" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="5 5" pathLength="100" stroke-dashoffset="0"/>
+
+            <!-- Paquetes de datos viajando -->
+            <circle class="wf-packet" r="3.4" fill="#ff5063"><animateMotion dur="2.4s" begin="0.4s" repeatCount="indefinite"><mpath href="#wfp1"/></animateMotion></circle>
+            <circle class="wf-packet" r="3.4" fill="#ff5063"><animateMotion dur="2.4s" begin="1.0s" repeatCount="indefinite"><mpath href="#wfp2"/></animateMotion></circle>
+            <circle class="wf-packet" r="3.4" fill="#ff5063"><animateMotion dur="2.6s" begin="1.7s" repeatCount="indefinite"><mpath href="#wfp3"/></animateMotion></circle>
+            <circle class="wf-packet" r="3.4" fill="#ff5063"><animateMotion dur="2.6s" begin="2.0s" repeatCount="indefinite"><mpath href="#wfp4"/></animateMotion></circle>
+            <circle class="wf-packet wf-packet-sub" r="2.8" fill="#ff8a98"><animateMotion dur="2.2s" begin="2.6s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#wfp5"/></animateMotion></circle>
+
+            <g class="wf-node wf-node-1" transform="translate(40, 140)">
+              <rect width="165" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(236,31,51,0.40)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#ec1f33"/>
+              <polygon points="26,29 39,36 26,43" fill="#fff"/>
+              <text x="58" y="30" fill="#ff5063" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">TRIGGER</text>
+              <text x="58" y="48" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">Webhook</text>
+              <text x="58" y="64" fill="#8a8a93" font-family="Inter, sans-serif" font-size="11">Recibe el evento</text>
+              <circle class="wf-port" cx="165" cy="36" r="4" fill="#ec1f33" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+
+            <g class="wf-node wf-node-2" transform="translate(300, 140)">
+              <rect width="185" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(236,31,51,0.45)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#ec1f33"/>
+              <polyline points="23,36 28,41 39,29" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="58" y="30" fill="#ff5063" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">VALIDACIÓN</text>
+              <text x="58" y="48" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">Schema + Auth</text>
+              <text x="58" y="64" fill="#8a8a93" font-family="Inter, sans-serif" font-size="11">Contrato declarado</text>
+              <circle class="wf-port" cx="0" cy="36" r="4" fill="#ec1f33" stroke="#0c0c0f" stroke-width="1.5"/>
+              <circle class="wf-port" cx="185" cy="36" r="4" fill="#ec1f33" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+
+            <g class="wf-node wf-node-3" transform="translate(580, 140)">
+              <rect width="185" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(236,31,51,0.62)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#ff5063"/>
+              <path d="M30,26 L32.2,33.8 L40,36 L32.2,38.2 L30,46 L27.8,38.2 L20,36 L27.8,33.8 Z" fill="#fff"/>
+              <text x="58" y="30" fill="#ff5063" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">AGENTE IA</text>
+              <text x="58" y="48" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">Con boundaries</text>
+              <text x="58" y="64" fill="#8a8a93" font-family="Inter, sans-serif" font-size="11">Fallback + logging</text>
+              <circle class="wf-port" cx="0" cy="36" r="4" fill="#ff5063" stroke="#0c0c0f" stroke-width="1.5"/>
+              <circle class="wf-port" cx="185" cy="36" r="4" fill="#ff5063" stroke="#0c0c0f" stroke-width="1.5"/>
+              <circle class="wf-port" cx="92.5" cy="72" r="4" fill="#ff5063" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+
+            <g class="wf-node wf-node-4" transform="translate(860, 60)">
+              <rect width="185" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(255,255,255,0.16)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#5a5a63"/>
+              <g fill="none" stroke="#fff" stroke-width="1.7"><ellipse cx="30" cy="30" rx="7" ry="2.6"/><path d="M23,30 v12 c0,1.5 3.1,2.6 7,2.6 s7,-1.1 7,-2.6 v-12"/><path d="M23,36 c0,1.5 3.1,2.6 7,2.6 s7,-1.1 7,-2.6"/></g>
+              <text x="58" y="30" fill="#8a8a93" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">SISTEMA</text>
+              <text x="58" y="48" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">ERP / Legacy</text>
+              <text x="58" y="64" fill="#8a8a93" font-family="Inter, sans-serif" font-size="11">SQL · API · queue</text>
+              <circle class="wf-port" cx="0" cy="36" r="4" fill="#5a5a63" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+
+            <g class="wf-node wf-node-5" transform="translate(860, 290)">
+              <rect width="185" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(236,31,51,0.40)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#ec1f33"/>
+              <path d="M24,32 h12 a2,2 0 0 1 2,2 v5 a2,2 0 0 1 -2,2 h-6 l-4,3 v-3 a2,2 0 0 1 -2,-2 v-5 a2,2 0 0 1 2,-2 Z" fill="none" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/>
+              <text x="58" y="34" fill="#ff5063" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">NOTIFICACIÓN</text>
+              <text x="58" y="50" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">Slack · Email · DB</text>
+              <circle class="wf-port" cx="0" cy="36" r="4" fill="#ec1f33" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+
+            <g class="wf-node wf-node-6" transform="translate(580, 360)">
+              <rect width="185" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(236,31,51,0.38)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#ec1f33"/>
+              <polyline points="23,43 28,36 32,39 39,29" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M23,43 h16" stroke="#fff" stroke-width="1.3" opacity="0.5"/>
+              <text x="58" y="30" fill="#ff5063" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">OBSERVABILIDAD</text>
+              <text x="58" y="48" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">Logs + métricas</text>
+              <text x="58" y="64" fill="#8a8a93" font-family="Inter, sans-serif" font-size="11">Trazabilidad total</text>
+              <circle class="wf-port" cx="92.5" cy="0" r="4" fill="#ec1f33" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+          </svg>
+
+          <ul class="workflow-captions">
+            <li class="wf-cap"><span class="wf-cap-tag">01</span><p>Trigger limpio con esquema declarado: nadie entra al sistema sin pasar contrato.</p></li>
+            <li class="wf-cap"><span class="wf-cap-tag">02</span><p>Agente IA con límites —no decide solo, decide dentro de reglas que vos auditás.</p></li>
+            <li class="wf-cap"><span class="wf-cap-tag">03</span><p>Integración con tu legacy sin reescribirlo: lo que ya funciona, sigue funcionando.</p></li>
+            <li class="wf-cap"><span class="wf-cap-tag">04</span><p>Observabilidad desde el día uno: si algo se rompe, sabés exactamente dónde.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE FRANCO (E-E-A-T: persona real, bio + trayectoria) ============ -->
+    <section class="section section--sobre" id="sobre" aria-labelledby="sobre-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="kicker">Quién está del otro lado</span>
+          <h2 id="sobre-title">¿Quién es Franco Hanemann?</h2>
+        </header>
+
+        <div class="sobre-grid">
+          <figure class="sobre-photo reveal">
+            <img src="https://cv.hanemann.ar/profile.png" alt="Franco E. Hanemann, consultor de automatización con n8n e IA en Mar del Plata" width="440" height="520" loading="lazy" />
+            <figcaption>
+              <span class="sobre-loc">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                Mar del Plata, Argentina
+              </span>
+            </figcaption>
+          </figure>
+
+          <div class="sobre-body reveal">
+            <p class="sobre-lead">Soy Franco Hanemann, consultor independiente de automatización con n8n e IA, con base en Mar del Plata. Trabajo como una persona —no como una agencia—, con más de veinte años en sistemas, ERPs e infraestructura crítica.</p>
+            <p>Arranqué a los 19 con tareas chicas y nunca paré: doce años en soporte, mantenimiento y desarrollo sobre ERPs (Bejerman / Thomson Reuters), después full stack en .NET, Angular y React, y hoy automatización con n8n y agentes de IA. </p>
+
+            <ol class="trayectoria" aria-label="Trayectoria profesional">
+              <li>
+                <span class="tray-year">2010—2022</span>
+                <div class="tray-info">
+                  <b>Bejerman · Thomson Reuters</b>
+                  <span>Soporte, mantenimiento y desarrollo sobre ERPs. Servidores de compilación, store procedures, MVC C#/VB.NET.</span>
+                </div>
+              </li>
+              <li>
+                <span class="tray-year">2022—2024</span>
+                <div class="tray-info">
+                  <b>OVERSOFT — Full Stack</b>
+                  <span>Desarrollo web con C#/.NET Core, API Rest, Angular, React, SQL Server y Entity Framework.</span>
+                </div>
+              </li>
+              <li>
+                <span class="tray-year">2024—hoy</span>
+                <div class="tray-info">
+                  <b>AGNOSTIC — Full Stack Ssr · n8n Developer</b>
+                  <span>Proyecto Banco Supervielle (GA4, lambdas en Python, TypeScript) y desarrollo de agentes, chatbots y automatizaciones con n8n.</span>
+                </div>
+              </li>
+            </ol>
+
+            <div class="sobre-certs" aria-label="Certificaciones y formación">
+              <span class="cert-pill cert-pill--n8n">n8n Basic 2025</span>
+              <span class="cert-pill cert-pill--n8n">n8n Advanced 2025</span>
+              <span class="cert-pill">HashiCorp 2025</span>
+              <span class="cert-pill">ElasticSearch 2025</span>
+              <span class="cert-pill">IA para Programadores 2025</span>
+              <span class="cert-pill">Téc. Programación · UTN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ (real questions, schema-matched) ============ -->
+    <section class="section section--faq" id="preguntas" aria-labelledby="faq-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="kicker">Preguntas frecuentes</span>
+          <h2 id="faq-title">Lo que suelen preguntarme antes de empezar</h2>
+          <p class="sec-sub">Respuestas directas primero; el detalle, después.</p>
+        </header>
+
+        <div class="faq reveal-stagger">
+          <details open>
+            <summary><h3>¿Quién hace automatización con n8n en Argentina?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body">
+              <p class="faq-lead">Franco Hanemann, consultor independiente con base en Mar del Plata, certificado n8n Basic y Advanced 2025.</p>
+              <p>Llego con más de veinte años de experiencia en sistemas, ERPs e infraestructura crítica. Trabajo con PyMEs argentinas, startups internacionales y agencias que tercerizan desarrollo, en español, portugués o inglés.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary><h3>¿Cuánto cuesta automatizar procesos con n8n?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body">
+              <p class="faq-lead">Depende del alcance del proyecto, no de las horas. En la primera conversación salís con un rango concreto.</p>
+              <p>Las tarifas se ajustan al contexto: Argentina en pesos con ajuste, LATAM y exportación en dólares, Europa en euros facturando desde Italia. El diagnóstico se cobra, porque el diagnóstico es el trabajo —no una llamada comercial.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary><h3>¿Cómo contrato un consultor de n8n?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body">
+              <p class="faq-lead">Por tres vías que pesan lo mismo: agendás una llamada, me escribís por WhatsApp o hablás con el bot del sitio.</p>
+              <p>El bot, además, es una demostración en vivo de lo que construyo. En esa primera conversación me contás dónde está tu operación y te digo cómo la abordaría: a veces con un proyecto, a veces con una recomendación distinta.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary><h3>¿Por qué n8n y no otra herramienta?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body">
+              <p class="faq-lead">Por control técnico, flexibilidad de arquitectura, self-hosting y un mejor manejo de los escenarios con IA.</p>
+              <p>Para casos simples hay alternativas más simples, y si el tuyo entra ahí, te lo señalo. n8n se destaca cuando la operación crece y necesitás ver todo con claridad: qué corre, cuándo y qué sucede si algo falla.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary><h3>¿Quedo atado al proveedor?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body">
+              <p class="faq-lead">No. Lo que diseño te queda documentado y corriendo en tu propia infraestructura, en formatos abiertos.</p>
+              <p>Si más adelante querés cambiar de proveedor o internalizarlo, otro técnico puede leer lo que dejé y continuar. Al ser n8n, lo instalás en el servidor que prefieras, sin depender de mí.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section section--contacto" id="contacto" aria-labelledby="contacto-title">
+      <div class="wrap closer reveal">
+        <span class="kicker">Conversemos</span>
+        <h2 id="contacto-title">Una hora. Sin pitch.</h2>
+        <p class="closer-lead">Vos me contás dónde está tu operación, yo te escucho con calma y te digo cómo se podría abordar. A veces salimos con un proyecto, a veces con una recomendación distinta. Cualquiera de las tres vías está bien.</p>
+
+        <div class="closer-cta">
+          <button class="cta" type="button" data-cta="call" aria-haspopup="dialog" aria-controls="chat">
+            <span class="cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/></svg></span>
+            <span class="cta-txt"><b>Agendá una llamada</b></span>
+          </button>
+          <a class="cta" href="https://wa.me/5492235351875?text=Hola%20Franco" target="_blank" rel="noopener">
+            <span class="cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2.4c-5.3 0-9.6 4.3-9.6 9.6 0 1.7.45 3.34 1.3 4.8L2.4 21.6l4.94-1.3a9.55 9.55 0 0 0 4.7 1.2h.01c5.3 0 9.6-4.3 9.6-9.6 0-2.57-1-4.98-2.81-6.8a9.54 9.54 0 0 0-6.8-2.7Zm0 1.6c2.13 0 4.13.83 5.64 2.34a7.95 7.95 0 0 1 2.33 5.66c0 4.41-3.59 8-8 8a7.94 7.94 0 0 1-4.04-1.1l-.29-.17-2.93.77.78-2.86-.19-.3a7.93 7.93 0 0 1-1.22-4.24c0-4.41 3.59-8 8-8Z"/></svg></span>
+            <span class="cta-txt"><b>WhatsApp</b></span>
+          </a>
+          <button class="cta" type="button" data-cta="bot" aria-haspopup="dialog" aria-controls="chat">
+            <span class="cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3 20.5l1.45-5.05A8.5 8.5 0 1 1 21 11.5Z"/></svg></span>
+            <span class="cta-txt"><b>Hablá con el bot</b></span>
+          </button>
+        </div>
+
+        <p class="closer-meta">O escribime por mail a <a href="mailto:franco@hanemann.ar?subject=Quiero%20automatizar%20procesos%20con%20n8n">franco@hanemann.ar</a> · ¿Querés ver mi experiencia? <a href="https://cv.hanemann.ar" target="_blank" rel="noopener">cv.hanemann.ar</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <span class="foot-brand"><span class="brand-mark sm" aria-hidden="true">H</span> Franco E. Hanemann</span>
+      <p class="foot-meta">Mar del Plata, Argentina · Automatización con n8n · IA aplicada · Desarrollo a medida</p>
+      <p class="foot-meta">© <span id="year">2026</span> · Franco E. Hanemann · <span class="foot-updated">Actualizado: junio 2026</span></p>
+    </div>
+  </footer>
+
+  <!-- ============ BOT (demo en vivo) ============ -->
+  <button class="bot-fab" id="bot-fab" type="button" aria-haspopup="dialog" aria-controls="chat" aria-label="Hablá con el bot de Franco">
+    <span class="bot-fab-dot" aria-hidden="true"></span>
+    Hablá con el bot
+  </button>
+
+  <div class="chat-scrim" id="chat-scrim" hidden></div>
+  <aside class="chat" id="chat" role="dialog" aria-modal="true" aria-labelledby="chat-title" hidden>
+    <header class="chat-head">
+      <span class="chat-avatar" aria-hidden="true">H</span>
+      <div class="chat-id">
+        <p id="chat-title">Bot de Franco</p>
+        <small><span class="chat-live"></span> En línea · demo en vivo del servicio</small>
+      </div>
+      <button class="chat-x" id="chat-x" type="button" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+    <div class="chat-body" id="chat-body">
+      <div class="msg msg--bot">
+        <p>¡Hola! Soy el bot de Franco —y sí, estoy hecho con lo mismo que él construye para tus clientes. Puedo contarte cómo trabaja, en qué se especializa y responder cualquier inquietud. Algunas preguntas frecuentes 👇 o bien escribinos lo que quieras que estoy para responderte.</p>
+      </div>
+      <div class="chat-chips" id="chat-chips">
+        <button type="button" data-q="¿Qué podés automatizar en mi negocio?">¿Qué podés automatizar en mi negocio?</button>
+        <button type="button" data-q="¿Cuánto cuesta?">¿Cuánto cuesta?</button>
+        <button type="button" data-q="¿Cuándo NO me conviene?">¿Cuándo NO me conviene?</button>
+        <button type="button" class="chip-action" data-action="agendar">Quiero agendar una llamada</button>
+      </div>
+    </div>
+    <form class="chat-input" id="chat-form" autocomplete="off">
+      <input id="chat-text" type="text" placeholder="Escribí tu mensaje…" aria-label="Mensaje" />
+      <button type="submit" aria-label="Enviar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12 19 5l-5 14-3-6-6-1Z"/></svg>
+      </button>
+    </form>
+    <small class="chat-note">Bot real corriendo sobre n8n · es la misma tecnología que construyo para vos.</small>
+  </aside>
+
+  <script>
+    // year
+    var yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // sticky nav scrolled state
+    const navTop = document.getElementById('top');
+    const onScroll = () => navTop.classList.toggle('is-scrolled', window.scrollY > 16);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // reveal-on-scroll (progressive enhancement — content visible by default)
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('anim');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      document.querySelectorAll('.reveal, .reveal-stagger').forEach((el) => io.observe(el));
+    }
+
+    // ===== chat drawer (demo) =====
+    const chat = document.getElementById('chat');
+    const scrim = document.getElementById('chat-scrim');
+    const body = document.getElementById('chat-body');
+    const openers = document.querySelectorAll('[data-cta="bot"], #bot-fab');
+    let lastFocus = null;
+
+    const open = () => {
+      lastFocus = document.activeElement;
+      chat.hidden = false; scrim.hidden = false;
+      requestAnimationFrame(() => { chat.classList.add('open'); scrim.classList.add('open'); });
+      document.getElementById('chat-text').focus();
+    };
+    const close = () => {
+      chat.classList.remove('open'); scrim.classList.remove('open');
+      setTimeout(() => { chat.hidden = true; scrim.hidden = true; }, 260);
+      if (lastFocus) lastFocus.focus();
+    };
+    openers.forEach((b) => b.addEventListener('click', open));
+    document.getElementById('chat-x').addEventListener('click', close);
+    scrim.addEventListener('click', close);
+    addEventListener('keydown', (e) => { if (e.key === 'Escape' && !chat.hidden) close(); });
+
+    // "Agendá una llamada" → abre el bot y le pide coordinar la llamada (el bot toma nombre y datos)
+    const AGENDA_MSG = 'Quiero agendar una llamada con Franco';
+    const agendarLlamada = () => {
+      open();
+      setTimeout(() => { if (typeof ask === 'function') ask(AGENDA_MSG); }, 320);
+    };
+    document.querySelectorAll('[data-cta="call"]').forEach((b) => b.addEventListener('click', agendarLlamada));
+
+    // ===== Bot real — conectado al webhook de n8n =====
+    const BOT_WEBHOOK = 'https://n8n.srv934218.hstgr.cloud/webhook/asistente-branding';
+
+    // sessionId persistente para que el agente mantenga contexto entre mensajes
+    let sessionId;
+    try {
+      sessionId = localStorage.getItem('hane_bot_session');
+      if (!sessionId) {
+        sessionId = (crypto.randomUUID ? crypto.randomUUID() : 'sess-' + Date.now() + '-' + Math.random().toString(36).slice(2));
+        localStorage.setItem('hane_bot_session', sessionId);
+      }
+    } catch (_) {
+      sessionId = 'sess-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+    }
+
+    const errorReply = 'Uy, se me cortó la conexión un segundo. Probá de nuevo en un momento —o si preferís hablarlo en serio, agendá una llamada o escribime por WhatsApp.';
+
+    const push = (text, who) => {
+      const el = document.createElement('div');
+      el.className = 'msg msg--' + who;
+      el.innerHTML = '<p></p>';
+      el.querySelector('p').textContent = text;
+      body.insertBefore(el, document.getElementById('chat-chips'));
+      body.scrollTop = body.scrollHeight;
+      return el;
+    };
+
+    // Indicador "escribiendo…"
+    const showTyping = () => {
+      const el = document.createElement('div');
+      el.className = 'msg msg--bot msg--typing';
+      el.innerHTML = '<p><span class="typing-dots"><i></i><i></i><i></i></span></p>';
+      body.insertBefore(el, document.getElementById('chat-chips'));
+      body.scrollTop = body.scrollHeight;
+      return el;
+    };
+
+    // Extrae el texto de respuesta tolerando varios formatos de n8n
+    const extractReply = (data) => {
+      if (data == null) return '';
+      if (typeof data === 'string') return data.trim();
+      if (Array.isArray(data)) {
+        for (const item of data) { const r = extractReply(item); if (r) return r; }
+        return '';
+      }
+      if (typeof data === 'object') {
+        const keys = ['output', 'reply', 'response', 'text', 'message', 'answer', 'result', 'content'];
+        for (const k of keys) {
+          if (typeof data[k] === 'string' && data[k].trim()) return data[k].trim();
+        }
+        // a veces viene anidado (p.ej. { data: {...} } o { json: {...} })
+        for (const k of ['data', 'json']) {
+          if (data[k]) { const r = extractReply(data[k]); if (r) return r; }
+        }
+      }
+      return '';
+    };
+
+    let botBusy = false;
+    const ask = async (q) => {
+      if (botBusy) return;
+      push(q, 'me');
+      botBusy = true;
+      const typingEl = showTyping();
+      try {
+        const res = await fetch(BOT_WEBHOOK, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: q, chatInput: q, sessionId: sessionId })
+        });
+        let reply = '';
+        if (res.ok) {
+          const ct = res.headers.get('content-type') || '';
+          if (ct.includes('application/json')) {
+            reply = extractReply(await res.json());
+          } else {
+            reply = (await res.text()).trim();
+          }
+        }
+        typingEl.remove();
+        push(reply || errorReply, 'bot');
+      } catch (err) {
+        typingEl.remove();
+        push(errorReply, 'bot');
+      } finally {
+        botBusy = false;
+      }
+    };
+    document.getElementById('chat-chips').addEventListener('click', (e) => {
+      const b = e.target.closest('button'); if (!b) return;
+      if (b.dataset.action === 'agendar') { ask(AGENDA_MSG); return; }
+      if (b.dataset.q) ask(b.dataset.q);
+    });
+    document.getElementById('chat-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const inp = document.getElementById('chat-text');
+      const v = inp.value.trim(); if (!v) return;
+      ask(v); inp.value = '';
+    });
+
+    // ===== Turbina del hero — 13 aspas asimétricas inclinadas (versión Franco) =====
+    (function () {
+      const canvas = document.getElementById('hero-turbina');
+      if (!canvas) return;
+
+      const ctx = canvas.getContext('2d');
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const TWO_PI = Math.PI * 2;
+      const N = 13;
+
+      const TILT_DEG = 20;
+      const SPEED_FACTOR = 1.2;
+      const CURVE = 0.37;
+      const LEAN = 0.14;
+      const CORE_OPACITY = 0.06;
+
+      const TILT = TILT_DEG * Math.PI / 180;
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      let displaySize = 0, cx = 0, cy = 0, bladeRadius = 0, t = 0, rafId = null;
+
+      function resize() {
+        const rect = canvas.getBoundingClientRect();
+        displaySize = Math.max(60, Math.round(rect.width || 200));
+        canvas.width = Math.floor(displaySize * dpr);
+        canvas.height = Math.floor(displaySize * dpr);
+        canvas.style.width = displaySize + 'px';
+        canvas.style.height = displaySize + 'px';
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.scale(dpr, dpr);
+        cx = displaySize / 2;
+        cy = displaySize / 2;
+        bladeRadius = displaySize * 0.43;
+      }
+
+      function addBladeSubpath(c) {
+        const r = bladeRadius;
+        c.moveTo(0, 0);
+        c.bezierCurveTo(-r * 0.06, -r * 0.28, -r * (0.06 + LEAN * 0.5), -r * 0.62, -r * LEAN, -r);
+        c.bezierCurveTo(r * CURVE, -r * 0.72, r * (CURVE - 0.04), -r * 0.22, 0, 0);
+        c.closePath();
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, displaySize, displaySize);
+
+        const breath = reduceMotion
+          ? 0.004
+          : 0.020 * SPEED_FACTOR + Math.sin(t * 0.45) * 0.002;
+        t += breath;
+
+        ctx.save();
+        ctx.translate(cx, cy);
+        ctx.rotate(TILT);
+        ctx.rotate(t);
+
+        ctx.beginPath();
+        for (let i = 0; i < N; i++) {
+          ctx.save();
+          ctx.rotate((TWO_PI * i) / N);
+          addBladeSubpath(ctx);
+          ctx.restore();
+        }
+
+        ctx.shadowColor = 'rgba(100, 0, 0, 0.42)';
+        ctx.shadowBlur = 12;
+        ctx.shadowOffsetX = 2;
+        ctx.shadowOffsetY = 3;
+
+        const baseGrad = ctx.createRadialGradient(0, 0, bladeRadius * 0.08, 0, 0, bladeRadius * 1.05);
+        baseGrad.addColorStop(0, '#FF2A3E');
+        baseGrad.addColorStop(0.45, '#C8141E');
+        baseGrad.addColorStop(1, '#6C000A');
+        ctx.fillStyle = baseGrad;
+        ctx.fill();
+        ctx.restore();
+
+        if (CORE_OPACITY > 0) {
+          ctx.save();
+          ctx.translate(cx, cy);
+          const coreGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, bladeRadius * 0.16);
+          coreGrad.addColorStop(0, 'rgba(255, 225, 225, ' + CORE_OPACITY + ')');
+          coreGrad.addColorStop(0.45, 'rgba(217, 33, 50, ' + (CORE_OPACITY * 0.5) + ')');
+          coreGrad.addColorStop(1, 'rgba(120, 0, 0, 0)');
+          ctx.fillStyle = coreGrad;
+          ctx.beginPath();
+          ctx.arc(0, 0, bladeRadius * 0.16, 0, TWO_PI);
+          ctx.fill();
+          ctx.restore();
+        }
+
+        rafId = requestAnimationFrame(draw);
+      }
+
+      resize();
+      draw();
+
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          cancelAnimationFrame(rafId);
+          resize();
+          draw();
+        }, 150);
+      });
+
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              if (!rafId) draw();
+            } else if (rafId) {
+              cancelAnimationFrame(rafId);
+              rafId = null;
+            }
+          });
+        }, { threshold: 0.05 });
+        io.observe(canvas);
+      }
+    })();
+  </script>
+
+</body>
+</html>

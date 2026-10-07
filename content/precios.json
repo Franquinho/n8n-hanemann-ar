@@ -1,0 +1,15 @@
+{
+  "_comentario": "ÚNICA fuente de precios. build.py los inyecta en las tres portadas, en el JSON-LD y en el prompt del bot. 'lista' = precio después del lanzamiento. BRL redondeados con criterio comercial (-97 en entradas y abonos, redondos en proyectos), a ~5 BRL por USD (USD/BRL 4,98 al 6-oct-2026).",
+  "lanzamiento_hasta": "2026-12-31",
+  "validez_propuesta_dias": 15,
+  "items": {
+    "diagnostico": { "usd": 0, "brl": 0, "minutos": 30 },
+    "puntual":     { "usd": 150,  "usd_lista": 249,  "brl": 747,   "brl_lista": 1247,  "desde": true },
+    "piloto":      { "usd": 290,  "usd_lista": 490,  "brl": 1497,  "brl_lista": 2497 },
+    "agente":      { "usd": 990,  "usd_lista": 1490, "brl": 5000,  "brl_lista": 7500,  "desde": true },
+    "erp":         { "usd": 2490, "usd_lista": 3500, "brl": 12500, "brl_lista": 17500, "desde": true },
+    "monitoreo":   { "usd": 49,   "usd_lista": 59,   "brl": 247,   "brl_lista": 297,   "mensual": true },
+    "operacion":   { "usd": 129,  "usd_lista": 159,  "brl": 647,   "brl_lista": 797,   "mensual": true },
+    "hora":        { "usd": 45,   "brl": 225 }
+  }
+}

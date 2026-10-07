@@ -1,0 +1,19 @@
+{
+  "_comentario": "Datos de contacto y URLs compartidos por todas las páginas. Cambiar acá, correr build.py y subir dist/.",
+  "dominio": "https://n8n.hanemann.ar",
+  "cv": "https://cv.hanemann.ar",
+  "nombre": "Franco E. Hanemann",
+  "email": "franco@hanemann.ar",
+  "whatsapp_num": "5492235351875",
+  "whatsapp_display": "+54 9 223 535-1875",
+  "telefono_e164": "+5492235351875",
+  "cal_url": "https://cal.com/franco-hanemann-agenda/30min",
+  "linkedin": "https://www.linkedin.com/in/franco-hanemann-2a1a36a9",
+  "bot_webhook": "https://n8n.srv934218.hstgr.cloud/webhook/asistente-branding",
+  "bot_token": "fh-web-2026-a8c3e91f74d2b560",
+  "ciudad": "Mar del Plata",
+  "provincia": "Buenos Aires",
+  "pais": "AR",
+  "actualizado": "2026-10-07",
+  "publicado_desde": "2025-09-01"
+}
