@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Agente de IA no WhatsApp e automação com n8n · Franco Hanemann</title>
+  <meta name="description" content="Agentes de IA com a API oficial do WhatsApp que atendem, coletam dados e passam para a sua equipe. Automações com n8n a partir de R$ 747. Diagnóstico grátis." />
+  <meta name="author" content="Franco E. Hanemann" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#08080a" />
+  <link rel="canonical" href="https://n8n.hanemann.ar/pt/" />
+  <link rel="alternate" hreflang="es-AR" href="https://n8n.hanemann.ar/" />
+  <link rel="alternate" hreflang="es" href="https://n8n.hanemann.ar/es/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://n8n.hanemann.ar/pt/" />
+  <link rel="alternate" hreflang="x-default" href="https://n8n.hanemann.ar/es/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Franco Hanemann · Automação com n8n e IA" />
+  <meta property="og:locale:alternate" content="es_AR" />
+  <meta property="og:locale:alternate" content="es_LA" />
+  <meta property="og:title" content="Seu WhatsApp atende sozinho. Seu time vende." />
+  <meta property="og:description" content="Agentes de WhatsApp com IA e automações com n8n, com atendimento em português. Preços publicados e diagnóstico grátis." />
+  <meta property="og:url" content="https://n8n.hanemann.ar/pt/" />
+  <meta property="og:image" content="https://n8n.hanemann.ar/img/og-pt.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Seu WhatsApp atende sozinho. Seu time vende." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Seu WhatsApp atende sozinho. Seu time vende." />
+  <meta name="twitter:description" content="Agentes de WhatsApp com IA e automações com n8n, com atendimento em português. Preços publicados e diagnóstico grátis." />
+  <meta name="twitter:image" content="https://n8n.hanemann.ar/img/og-pt.png" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ec1f33'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-weight='700' font-size='20' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%23ec1f33'/%3E%3Ctext x='90' y='126' font-family='Arial,sans-serif' font-weight='700' font-size='112' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
+  <link rel="preload" href="../fonts/space-grotesk-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../css/site.css?v=e30e777dab" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://n8n.hanemann.ar/#franco",
+      "name": "Franco E. Hanemann",
+      "givenName": "Franco",
+      "familyName": "Hanemann",
+      "jobTitle": "Consultor de automação com n8n e IA",
+      "url": "https://n8n.hanemann.ar/",
+      "email": "franco@hanemann.ar",
+      "telephone": "+5492235351875",
+      "image": "https://n8n.hanemann.ar/img/franco-hanemann.jpg",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidad Tecnológica Nacional (UTN)"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mar del Plata",
+        "addressRegion": "Buenos Aires",
+        "addressCountry": "AR"
+      },
+      "knowsAbout": [
+        "n8n",
+        "Agentes de IA",
+        "API oficial do WhatsApp",
+        "Automação de processos",
+        "Integração de sistemas",
+        "ERP",
+        "CRM",
+        "Conversões offline no Google Ads"
+      ],
+      "knowsLanguage": [
+        "es",
+        "pt"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "name": "n8n Basic Course (2025)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "certificate",
+          "name": "n8n Advanced Course (2025)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Técnico Universitario de Programación (UTN, 2019)"
+        }
+      ],
+      "sameAs": [
+        "https://cv.hanemann.ar",
+        "https://www.linkedin.com/in/franco-hanemann-2a1a36a9"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://n8n.hanemann.ar/#service",
+      "name": "Franco Hanemann · Automatización con n8n e IA",
+      "url": "https://n8n.hanemann.ar/",
+      "provider": {
+        "@id": "https://n8n.hanemann.ar/#franco"
+      },
+      "email": "franco@hanemann.ar",
+      "telephone": "+5492235351875",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mar del Plata",
+        "addressRegion": "Buenos Aires",
+        "addressCountry": "AR"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Argentina"
+        },
+        {
+          "@type": "Country",
+          "name": "Brasil"
+        },
+        {
+          "@type": "Place",
+          "name": "Latinoamérica"
+        }
+      ],
+      "availableLanguage": [
+        "es",
+        "pt"
+      ],
+      "serviceType": [
+        "Agentes de WhatsApp com IA",
+        "Automação com n8n",
+        "Integração com ERP e CRM",
+        "Atribuição de vendas ao Google Ads e à Meta"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Diagnóstico",
+          "priceCurrency": "BRL",
+          "priceValidUntil": "2026-12-31",
+          "price": 0
+        },
+        {
+          "@type": "Offer",
+          "name": "Piloto em modo sombra",
+          "priceCurrency": "BRL",
+          "priceValidUntil": "2026-12-31",
+          "price": 1497
+        },
+        {
+          "@type": "Offer",
+          "name": "Agente de WhatsApp com IA + CRM",
+          "priceCurrency": "BRL",
+          "priceValidUntil": "2026-12-31",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 5000,
+            "priceCurrency": "BRL"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Operação mensal · Monitoramento",
+          "priceCurrency": "BRL",
+          "priceValidUntil": "2026-12-31",
+          "price": 247
+        },
+        {
+          "@type": "Offer",
+          "name": "Automação pontual",
+          "priceCurrency": "BRL",
+          "priceValidUntil": "2026-12-31",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 747,
+            "priceCurrency": "BRL"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Integração com o seu ERP",
+          "priceCurrency": "BRL",
+          "priceValidUntil": "2026-12-31",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 12500,
+            "priceCurrency": "BRL"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Operação mensal · Operação",
+          "priceCurrency": "BRL",
+          "priceValidUntil": "2026-12-31",
+          "price": 647
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://n8n.hanemann.ar/#website",
+      "url": "https://n8n.hanemann.ar/",
+      "name": "Franco Hanemann · Automatización con n8n e IA",
+      "inLanguage": [
+        "es-AR",
+        "es",
+        "pt-BR"
+      ],
+      "publisher": {
+        "@id": "https://n8n.hanemann.ar/#franco"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://n8n.hanemann.ar/pt/#webpage",
+      "url": "https://n8n.hanemann.ar/pt/",
+      "name": "Agente de IA no WhatsApp e automação com n8n · Franco Hanemann",
+      "inLanguage": "pt-BR",
+      "about": {
+        "@id": "https://n8n.hanemann.ar/#franco"
+      },
+      "datePublished": "2025-09-01",
+      "dateModified": "2026-10-07",
+      "primaryImageOfPage": "https://n8n.hanemann.ar/img/og-pt.png"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://n8n.hanemann.ar/pt/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto custa automatizar o atendimento no WhatsApp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Um agente com IA e CRM parte de R$ 5.000 no preço de lançamento. Uma automação menor parte de R$ 747. O diagnóstico é grátis e o piloto em modo sombra custa R$ 1.497, valor abatido integralmente se você fechar a implantação. À parte, você paga à Meta pelas mensagens e ao provedor de IA pelo uso, direto e em nome da sua empresa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "E se o agente errar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Antes de falar com um cliente, ele é testado com as suas próprias conversas. No piloto e na primeira semana de implantação o agente roda em modo sombra: lê e sugere respostas sem enviá-las. Quando não tem certeza, ou quando o cliente pede, passa a conversa para alguém da equipe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Você usa a API oficial do WhatsApp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, sempre. Trabalho com a API oficial da Meta, via provedores como a YCloud ou direto pela Cloud API. Com uma API não oficial o número pode ser bloqueado sem aviso. A oficial também tem regras: a Meta não permite assistentes de IA de uso geral, então o agente se limita a atendimento, vendas, agendamentos e qualificação."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fico preso a você?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. As contas e as credenciais ficam no nome da sua empresa. Entrego os fluxos exportados e um manual de operação. Se um dia você quiser trocar de fornecedor ou levar a operação para dentro de casa, outro técnico continua daí."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Por que n8n?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Porque ele pode rodar no seu próprio servidor, mostra o que cada etapa fez e cobra por execução completa. Para casos simples existem ferramentas mais simples, e se o seu for um deles eu aviso. O n8n compensa quando a operação cresce e você precisa saber o que rodou, quando e o que aconteceu se algo falhou."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Você trabalha com agências?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, de duas formas: indicação ou white label. Se você tem clientes pedindo bots, CRM ou atribuição de vendas, me chame no WhatsApp e eu passo as condições."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona o pagamento para quem está no Brasil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Por transferência internacional, com fatura em dólares. Os valores aparecem em reais como referência. Na proposta explico os tributos de importação de serviço que ficam por sua conta. Trabalho no mesmo fuso horário de Brasília."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head><body>
+  <div class="atmos" aria-hidden="true"></div>
+  <div class="grid-veil" aria-hidden="true"></div>
+  <a class="skip-link" href="#contenido">Pular para o conteúdo</a>
+  <header class="top" id="top">
+    <div class="wrap nav">
+      <a class="brand" href="./" aria-label="Franco E. Hanemann">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span class="brand-word">Franco E. Hanemann.</span>
+      </a>
+      <nav class="nav-links" aria-label="Seções">
+        <a class="nav-sec" href="#casos">Casos</a>
+        <a class="nav-sec" href="#precios">Preços</a>
+        <a class="nav-sec" href="#metodo">Como trabalho</a>
+        <a class="nav-sec" href="#sobre">Sobre mim</a>
+        <a class="nav-sec" href="#preguntas">Dúvidas</a>
+        <a class="lang-link" href="../es/" hreflang="es" lang="es" title="Español">ES</a>
+        <a class="nav-cta" href="https://cal.com/franco-hanemann-agenda/30min" target="_blank" rel="noopener"><span class="long">Diagnóstico grátis</span><span class="short" aria-hidden="true">Agendar</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-head"><p class="eyebrow"><span class="pulse" aria-hidden="true"></span>n8n · IA · WhatsApp · Em português</p></div>
+        <div class="hero-title-wrap">
+          <h1 class="hero-title" id="hero-title"><span class="ln">Seu WhatsApp</span><span class="ln"><span class="accent">atende sozinho.</span></span><span class="ln">Seu time</span><span class="ln">vende.</span></h1>
+          <div class="hero-turbine" aria-hidden="true"><canvas id="hero-turbina" width="320" height="320"></canvas></div>
+        </div>
+        <div class="hero-foot">
+          <div class="hero-lead-col">
+            <p class="hero-lead">Crio agentes de IA com a API oficial do WhatsApp que entendem áudios, coletam os dados do cliente, enviam a tabela de preços e passam a conversa para a pessoa certa da sua equipe. Tudo no n8n, em contas no nome da sua empresa e com documentação. Também faço automações menores: planilhas, formulários, avisos e relatórios.</p>
+            <div class="cta-row">
+              <a class="cta cta--solid" href="https://cal.com/franco-hanemann-agenda/30min" target="_blank" rel="noopener">
+                <span class="cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/><path d="M8.5 14.5l2.2 2.2 4-4.4"/></svg></span>
+                <span class="cta-txt"><b>Agendar diagnóstico</b><small>30 minutos · grátis</small></span>
+              </a>
+              <a class="cta" href="https://wa.me/5492235351875?text=Ol%C3%A1%20Franco%2C%20vi%20seu%20site%20e%20quero%20automatizar%20o%20atendimento%20no%20WhatsApp" target="_blank" rel="noopener">
+                <span class="cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2.4c-5.3 0-9.6 4.3-9.6 9.6 0 1.7.45 3.34 1.3 4.8L2.4 21.6l4.94-1.3a9.55 9.55 0 0 0 4.7 1.2h.01c5.3 0 9.6-4.3 9.6-9.6 0-2.57-1-4.98-2.81-6.8a9.54 9.54 0 0 0-6.8-2.7Zm0 1.6c2.13 0 4.13.83 5.64 2.34a7.95 7.95 0 0 1 2.33 5.66c0 4.41-3.59 8-8 8a7.94 7.94 0 0 1-4.04-1.1l-.29-.17-2.93.77.78-2.86-.19-.3a7.93 7.93 0 0 1-1.22-4.24c0-4.41 3.59-8 8-8Zm-2.6 3.96c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.39-.4-.54-.41h-.46Z"/></svg></span>
+                <span class="cta-txt"><b>Falar no WhatsApp</b><small>+54 9 223 535-1875</small></span>
+              </a>
+              <button class="cta" type="button" data-cta="bot" aria-haspopup="dialog" aria-controls="chat">
+                <span class="cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3 20.5l1.45-5.05A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg></span>
+                <span class="cta-txt"><b>Testar o bot</b><small>demo ao vivo do que eu construo</small></span>
+              </button>
+            </div>
+            <p class="cta-note">Em 30 minutos eu digo o que vale automatizar primeiro, quanto custa e quanto tempo leva.</p>
+          </div>
+          <aside class="hero-proof" aria-label="Em produção">
+            <p class="proof-label">Em produção</p>
+            <ul class="proof-list"><li><span class="proof-name">Atacadista de alimentos</span><span class="proof-tag">Argentina</span></li><li><span class="proof-name">Distribuidora de aço</span><span class="proof-tag">via agência parceira</span></li></ul>
+            <ul class="proof-facts"><li><span class="cert-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>16 anos em software, 12 numa desenvolvedora de ERP</span></li><li><span class="cert-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span>Cursos oficiais do n8n: Basic e Advanced (2025)</span></li></ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="casos" aria-labelledby="casos-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="kicker">Casos</span>
+          <h2 id="casos-title">O que já está rodando</h2>
+          <p class="sec-sub">Projetos reais e a etapa em que estão hoje.</p>
+        </header>
+        <ul class="case-grid reveal-stagger">
+          <li class="case case--prod"><p class="case-status">Em produção</p><h3>Atacadista de alimentos · Argentina</h3><p>Agente de WhatsApp que atende uma base de cerca de 11.700 contatos. Entende áudios, pede nome, atividade e região, envia a tabela de preços em PDF e passa a conversa para a equipe, que trabalha num CRM com quatro perfis.</p></li>
+          <li class="case case--impl"><p class="case-status">Em produção · nova fase em andamento</p><h3>Distribuidora de aço · via agência parceira</h3><p>Bot de WhatsApp no ar. Em implantação: cada venda fechada pelo WhatsApp volta para o Google Ads como conversão, vinculada ao clique do anúncio que a gerou.</p></li>
+          <li class="case case--prod"><p class="case-status">Em produção</p><h3>Este site</h3><p>O bot desta página responde dúvidas, qualifica cada contato e me avisa por e-mail quando alguém quer avançar. É a mesma base que uso nos projetos.</p><button class="case-demo" type="button" data-cta="bot" aria-haspopup="dialog" aria-controls="chat">Testar agora</button></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section" id="precios" aria-labelledby="precios-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="kicker">Preços</span>
+          <h2 id="precios-title">Quanto custa, antes da reunião</h2>
+          <p class="sec-sub">Cada proposta diz o que inclui e o que não inclui, com validade de 15 dias.</p>
+          <p class="launch"><span class="pulse" aria-hidden="true"></span>Preços de lançamento até 31 de dezembro de 2026</p>
+        </header>
+        <p class="ladder-label">Como começamos</p>
+        <ol class="ladder reveal-stagger">
+          <li class="step">
+            <div class="step-top"><span class="step-n">1</span><span class="step-meta">30 min · videochamada</span></div>
+            <h3>Diagnóstico</h3>
+            <p class="price"><b class="amount">Grátis</b></p>
+            <p>Você me mostra como o atendimento funciona hoje e eu digo o que vale automatizar primeiro, se vale a pena e quanto custa.</p>
+          </li>
+          <li class="step">
+            <div class="step-top"><span class="step-n">2</span><span class="step-meta">Sem mexer no seu número</span></div>
+            <h3>Piloto em modo sombra</h3>
+            <p class="price"><b class="amount">R$ 1.497</b> <span class="was">Em 2027: R$ 2.497</span></p>
+            <p>Você exporta de 50 a 100 conversas do WhatsApp e eu rodo o agente sobre elas, sem mexer no seu número. No fim, você recebe um relatório com a taxa de acerto. Se fechar a implantação em até 30 dias, o valor do piloto é abatido integralmente.</p>
+          </li>
+          <li class="step step--main">
+            <div class="step-top"><span class="step-n">3</span><span class="step-meta">Implantação</span></div>
+            <h3>Agente de WhatsApp com IA + CRM</h3>
+            <p class="price"><span class="from">a partir de</span> <b class="amount">R$ 5.000</b> <span class="was">Em 2027: R$ 7.500</span></p>
+            <div class="inc"><p class="inc-label">Inclui</p><ul><li>Até 4 tipos de atendimento</li><li>Áudios e transbordo para alguém da equipe</li><li>Caixa de entrada compartilhada para a equipe</li><li>Integração com 1 CRM que tenha API</li><li>1 semana em modo sombra e 2 rodadas de ajustes</li><li>Manual de operação</li></ul><p class="exc"><b>Não inclui:</b> ERP, campanhas ativas, painel sob medida nem migração de dados.</p></div>
+          </li>
+          <li class="step">
+            <div class="step-top"><span class="step-n">4</span><span class="step-meta">Sem fidelidade</span></div>
+            <h3>Operação mensal</h3>
+            <p class="price"><span class="from">a partir de</span> <b class="amount">R$ 247</b><span class="per">/mês</span></p>
+            <ul class="planes"><li><div class="plan-head"><b>Monitoramento</b><p class="price"><b class="amount">R$ 247</b><span class="per">/mês</span> <span class="was">Em 2027: R$ 297/mês</span></p></div><p>Até 3 fluxos, correções e resposta em 48 h.</p></li><li><div class="plan-head"><b>Operação</b><p class="price"><b class="amount">R$ 647</b><span class="per">/mês</span> <span class="was">Em 2027: R$ 797/mês</span></p></div><p>Até 10 fluxos, 2 h de ajustes por mês e resposta em 24 h.</p></li></ul>
+          </li>
+        </ol>
+        <p class="ladder-label">Fora do agente</p>
+        <ul class="extras">
+          <li class="extra"><div class="extra-head"><h3>Automação pontual</h3><p class="price"><span class="from">a partir de</span> <b class="amount">R$ 747</b> <span class="was">Em 2027: R$ 1.247</span></p></div><p>Um fluxo entre as suas ferramentas: formulário para planilha, aviso por e-mail ou Telegram, relatório semanal, cadastro no CRM. Prazo habitual: 5 dias úteis depois de receber os acessos, com 30 dias de correções. Não inclui WhatsApp nem IA conversacional.</p></li>
+          <li class="extra"><div class="extra-head"><h3>Integração com o seu ERP</h3><p class="price"><span class="from">a partir de</span> <b class="amount">R$ 12.500</b> <span class="was">Em 2027: R$ 17.500</span></p></div><p>Pedidos, estoque ou clientes entre o agente e um ERP que tenha API. Sempre depois de um piloto, para orçar sobre algo medido.</p></li>
+        </ul>
+        <div class="pay-notes">
+          <p>Horas avulsas: R$ 225 por hora, com orçamento antes de começar.</p>
+          <p>Os valores em reais são referência (cerca de R$ 5 por dólar). A proposta e a fatura saem em dólares, com pagamento por transferência internacional: 50% no início e 50% na entrega. Os valores não incluem os tributos de importação de serviço que ficam por sua conta (como IRRF, CIDE, PIS/COFINS-Importação, ISS e IOF); explico tudo na proposta. A Meta e o provedor de IA cobram direto no seu cartão, em nome da sua empresa, sem nenhum acréscimo da minha parte.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section section--showcase" id="metodo" aria-labelledby="metodo-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="kicker">Como trabalho</span>
+          <h2 id="metodo-title">O que você recebe na entrega</h2>
+          <p class="sec-sub">Um fluxo rodando na sua conta, com cada etapa visível e um registro do que ele fez.</p>
+        </header>
+        <figure class="workflow-canvas reveal" role="img" aria-label="Diagrama de um fluxo no n8n: um webhook recebe o evento, valida os dados, passa para um agente de IA com limites que consulta o ERP ou o CRM e envia avisos, com um registro do que aconteceu em cada etapa." style="margin-inline:0">
+          <svg viewBox="0 0 1100 500" preserveAspectRatio="xMidYMid meet" class="workflow-svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="wfLine" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#8e0d18" stop-opacity="0.5"/><stop offset="55%" stop-color="#ec1f33" stop-opacity="0.9"/><stop offset="100%" stop-color="#ff5063" stop-opacity="1"/></linearGradient>
+              <linearGradient id="wfNode" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="rgba(255,255,255,0.06)"/><stop offset="100%" stop-color="rgba(255,255,255,0.015)"/></linearGradient>
+            </defs>
+            <path id="wfp1" class="wf-line wf-line-1" d="M 205 176 C 252 176, 253 176, 300 176" stroke="url(#wfLine)" stroke-width="2.4" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/>
+            <path id="wfp2" class="wf-line wf-line-2" d="M 485 176 C 532 176, 533 176, 580 176" stroke="url(#wfLine)" stroke-width="2.4" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/>
+            <path id="wfp3" class="wf-line wf-line-3" d="M 765 176 C 818 176, 820 96, 860 96" stroke="url(#wfLine)" stroke-width="2.4" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/>
+            <path id="wfp4" class="wf-line wf-line-4" d="M 765 176 C 818 176, 820 326, 860 326" stroke="url(#wfLine)" stroke-width="2.4" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"/>
+            <path id="wfp5" class="wf-line wf-line-5 wf-line-sub" d="M 672 360 C 672 312, 672 300, 672 248" stroke="url(#wfLine)" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="5 5" pathLength="100" stroke-dashoffset="0"/>
+            <circle class="wf-packet" r="3.4" fill="#ff5063"><animateMotion dur="2.4s" begin="0.4s" repeatCount="indefinite"><mpath href="#wfp1"/></animateMotion></circle>
+            <circle class="wf-packet" r="3.4" fill="#ff5063"><animateMotion dur="2.4s" begin="1.0s" repeatCount="indefinite"><mpath href="#wfp2"/></animateMotion></circle>
+            <circle class="wf-packet" r="3.4" fill="#ff5063"><animateMotion dur="2.6s" begin="1.7s" repeatCount="indefinite"><mpath href="#wfp3"/></animateMotion></circle>
+            <circle class="wf-packet" r="3.4" fill="#ff5063"><animateMotion dur="2.6s" begin="2.0s" repeatCount="indefinite"><mpath href="#wfp4"/></animateMotion></circle>
+            <circle class="wf-packet wf-packet-sub" r="2.8" fill="#ff8a98"><animateMotion dur="2.2s" begin="2.6s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#wfp5"/></animateMotion></circle>
+            <g class="wf-node wf-node-1" transform="translate(40, 140)">
+              <rect width="165" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(236,31,51,0.40)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#ec1f33"/><polygon points="26,29 39,36 26,43" fill="#fff"/>
+              <text x="58" y="30" fill="#ff5063" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">GATILHO</text>
+              <text x="58" y="48" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">Webhook</text>
+              <text x="58" y="64" fill="#8a8a93" font-family="Inter, sans-serif" font-size="11">Recebe o evento</text>
+              <circle class="wf-port" cx="165" cy="36" r="4" fill="#ec1f33" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+            <g class="wf-node wf-node-2" transform="translate(300, 140)">
+              <rect width="185" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(236,31,51,0.45)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#ec1f33"/><polyline points="23,36 28,41 39,29" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <text x="58" y="30" fill="#ff5063" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">VALIDAÇÃO</text>
+              <text x="58" y="48" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">Dados + acesso</text>
+              <text x="58" y="64" fill="#8a8a93" font-family="Inter, sans-serif" font-size="11">Só entra o que é válido</text>
+              <circle class="wf-port" cx="0" cy="36" r="4" fill="#ec1f33" stroke="#0c0c0f" stroke-width="1.5"/><circle class="wf-port" cx="185" cy="36" r="4" fill="#ec1f33" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+            <g class="wf-node wf-node-3" transform="translate(580, 140)">
+              <rect width="185" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(236,31,51,0.62)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#ff5063"/><path d="M30,26 L32.2,33.8 L40,36 L32.2,38.2 L30,46 L27.8,38.2 L20,36 L27.8,33.8 Z" fill="#fff"/>
+              <text x="58" y="30" fill="#ff5063" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">AGENTE IA</text>
+              <text x="58" y="48" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">Com limites</text>
+              <text x="58" y="64" fill="#8a8a93" font-family="Inter, sans-serif" font-size="11">Passa para uma pessoa</text>
+              <circle class="wf-port" cx="0" cy="36" r="4" fill="#ff5063" stroke="#0c0c0f" stroke-width="1.5"/><circle class="wf-port" cx="185" cy="36" r="4" fill="#ff5063" stroke="#0c0c0f" stroke-width="1.5"/><circle class="wf-port" cx="92.5" cy="72" r="4" fill="#ff5063" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+            <g class="wf-node wf-node-4" transform="translate(860, 60)">
+              <rect width="185" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(255,255,255,0.16)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#5a5a63"/><g fill="none" stroke="#fff" stroke-width="1.7"><ellipse cx="30" cy="30" rx="7" ry="2.6"/><path d="M23,30 v12 c0,1.5 3.1,2.6 7,2.6 s7,-1.1 7,-2.6 v-12"/><path d="M23,36 c0,1.5 3.1,2.6 7,2.6 s7,-1.1 7,-2.6"/></g>
+              <text x="58" y="30" fill="#8a8a93" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">SISTEMA</text>
+              <text x="58" y="48" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">CRM · planilha</text>
+              <text x="58" y="64" fill="#8a8a93" font-family="Inter, sans-serif" font-size="11">API · SQL</text>
+              <circle class="wf-port" cx="0" cy="36" r="4" fill="#5a5a63" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+            <g class="wf-node wf-node-5" transform="translate(860, 290)">
+              <rect width="185" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(236,31,51,0.40)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#ec1f33"/><path d="M24,32 h12 a2,2 0 0 1 2,2 v5 a2,2 0 0 1 -2,2 h-6 l-4,3 v-3 a2,2 0 0 1 -2,-2 v-5 a2,2 0 0 1 2,-2 Z" fill="none" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/>
+              <text x="58" y="34" fill="#ff5063" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">AVISO</text>
+              <text x="58" y="52" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">E-mail · Telegram</text>
+              <circle class="wf-port" cx="0" cy="36" r="4" fill="#ec1f33" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+            <g class="wf-node wf-node-6" transform="translate(580, 360)">
+              <rect width="185" height="72" rx="13" fill="url(#wfNode)" stroke="rgba(236,31,51,0.38)" stroke-width="1.5"/>
+              <rect x="14" y="20" width="32" height="32" rx="8" fill="#ec1f33"/><polyline points="23,43 28,36 32,39 39,29" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M23,43 h16" stroke="#fff" stroke-width="1.3" opacity="0.5"/>
+              <text x="58" y="30" fill="#ff5063" font-family="Space Grotesk, sans-serif" font-weight="500" font-size="10" letter-spacing="1.8">REGISTRO</text>
+              <text x="58" y="48" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="14">Logs + erros</text>
+              <text x="58" y="64" fill="#8a8a93" font-family="Inter, sans-serif" font-size="11">O que houve e onde</text>
+              <circle class="wf-port" cx="92.5" cy="0" r="4" fill="#ec1f33" stroke="#0c0c0f" stroke-width="1.5"/>
+            </g>
+          </svg>
+        </figure>
+        <ul class="workflow-captions">
+            <li class="wf-cap"><span class="wf-cap-tag" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><p><b>Contas no nome da sua empresa.</b> WhatsApp, IA e servidor ficam com você, com as suas credenciais.</p></li>
+            <li class="wf-cap"><span class="wf-cap-tag" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><p><b>Fluxos exportados e versionados.</b> Se um dia você trocar de fornecedor, outro técnico continua daí.</p></li>
+            <li class="wf-cap"><span class="wf-cap-tag" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><p><b>Manual de operação.</b> O que cada fluxo faz, o que fazer se falhar e quem é avisado.</p></li>
+            <li class="wf-cap"><span class="wf-cap-tag" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><p><b>Registro de erros desde o primeiro dia.</b> Se algo para, chega um aviso e fica registrado onde aconteceu.</p></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section" id="servicios" aria-labelledby="servicios-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="kicker">Outros serviços</span>
+          <h2 id="servicios-title">Além do agente de WhatsApp</h2>
+        </header>
+        <ul class="auto-grid reveal-stagger">
+          <li class="auto-card"><span class="auto-tag">Agências</span><h3>Atribuição de vendas ao Google Ads e à Meta</h3><p>Conecto o clique do anúncio à venda fechada no WhatsApp e devolvo essa venda à plataforma como conversão offline. Piloto para as duas primeiras agências.</p></li>
+          <li class="auto-card"><span class="auto-tag">Integração</span><h3>ERP, CRM e planilhas conectados</h3><p>O que hoje você copia à mão entre sistemas, eu conecto por API. Doze anos numa desenvolvedora de ERP me ensinaram a não quebrar o que já funciona.</p></li>
+          <li class="auto-card"><span class="auto-tag">Operação</span><h3>Relatórios e avisos automáticos</h3><p>Relatórios que se geram sozinhos e avisos quando acontece algo importante: um pedido grande, um cliente sem resposta, um fluxo que falhou.</p></li>
+          <li class="auto-card"><span class="auto-tag">Web</span><h3>Bots para o seu site</h3><p>Um assistente como o desta página: responde, qualifica o contato e avisa você por e-mail quando alguém quer avançar.</p></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section section--sobre" id="sobre" aria-labelledby="sobre-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="kicker">Quem está do outro lado</span>
+          <h2 id="sobre-title">Franco Hanemann</h2>
+        </header>
+        <div class="sobre-grid">
+          <figure class="sobre-photo">
+            <picture>
+              <source srcset="../img/franco-hanemann.webp" type="image/webp" />
+              <img src="../img/franco-hanemann.jpg" alt="Franco E. Hanemann, consultor de automação com n8n e IA" width="640" height="640" loading="lazy" decoding="async" />
+            </picture>
+            <figcaption><span class="sobre-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>Mar del Plata, Argentina</span></figcaption>
+          </figure>
+          <div class="sobre-body">
+            <p class="sobre-lead">Sou consultor independente de automação com n8n e IA, em Mar del Plata, na Argentina. Trabalho sozinho: você fala com quem desenha, constrói e mantém o que contratou.</p>
+            <p>Comecei em 2010 na Sistemas Bejerman, da Thomson Reuters: doze anos de suporte, implantação e desenvolvimento num ERP. Depois fui desenvolvedor full stack em .NET, Angular e React. Desde 2025 trabalho com n8n e agentes de IA e, desde abril de 2026, de forma independente. Atendo em português, no mesmo fuso horário de Brasília.</p>
+            <ol class="trayectoria" aria-label="Trajetória profissional"><li><span class="tray-year">2026 — hoje</span><div class="tray-info"><b>Independente · n8n, IA e WhatsApp</b><span>Agentes de WhatsApp com CRM, atribuição de vendas ao Google Ads e automações com n8n.</span></div></li><li><span class="tray-year">2024 — 2026</span><div class="tray-info"><b>AGNOSTIC · Full Stack pleno e n8n developer</b><span>Projeto Banco Supervielle (GA4, lambdas em Python, TypeScript). Desde 2025, agentes, chatbots e automações com n8n.</span></div></li><li><span class="tray-year">2022 — 2024</span><div class="tray-info"><b>OVERSOFT · Full Stack</b><span>C# e .NET Core, API REST, Angular, React, SQL Server e Entity Framework.</span></div></li><li><span class="tray-year">2010 — 2022</span><div class="tray-info"><b>Sistemas Bejerman · Thomson Reuters</b><span>Suporte, manutenção e desenvolvimento em ERP: servidores de build, stored procedures, MVC em C# e VB.NET.</span></div></li></ol>
+            <div class="sobre-certs" aria-label="Cursos e certificações"><span class="cert-pill cert-pill--n8n">n8n Basic · 2025</span><span class="cert-pill cert-pill--n8n">n8n Advanced · 2025</span><span class="cert-pill">HashiCorp · 2025</span><span class="cert-pill">Elasticsearch · 2025</span><span class="cert-pill">IA para Programadores · 2025</span><span class="cert-pill">Técnico Universitário de Programação · UTN</span></div>
+            <p class="sobre-more">Trajetória completa em <a href="https://cv.hanemann.ar" target="_blank" rel="noopener">cv.hanemann.ar</a> e no <a href="https://www.linkedin.com/in/franco-hanemann-2a1a36a9" target="_blank" rel="noopener">LinkedIn</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--faq" id="preguntas" aria-labelledby="faq-title">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="kicker">Dúvidas frequentes</span>
+          <h2 id="faq-title">O que costumam me perguntar antes de começar</h2>
+        </header>
+        <div class="faq">
+          <details open>
+            <summary><h3>Quanto custa automatizar o atendimento no WhatsApp?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p class="faq-lead">Um agente com IA e CRM parte de R$ 5.000 no preço de lançamento. Uma automação menor parte de R$ 747.</p><p>O diagnóstico é grátis e o piloto em modo sombra custa R$ 1.497, valor abatido integralmente se você fechar a implantação. À parte, você paga à Meta pelas mensagens e ao provedor de IA pelo uso, direto e em nome da sua empresa.</p></div>
+          </details>
+          <details>
+            <summary><h3>E se o agente errar?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p class="faq-lead">Antes de falar com um cliente, ele é testado com as suas próprias conversas.</p><p>No piloto e na primeira semana de implantação o agente roda em modo sombra: lê e sugere respostas sem enviá-las. Quando não tem certeza, ou quando o cliente pede, passa a conversa para alguém da equipe.</p></div>
+          </details>
+          <details>
+            <summary><h3>Você usa a API oficial do WhatsApp?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p class="faq-lead">Sim, sempre.</p><p>Trabalho com a API oficial da Meta, via provedores como a YCloud ou direto pela Cloud API. Com uma API não oficial o número pode ser bloqueado sem aviso. A oficial também tem regras: a Meta não permite assistentes de IA de uso geral, então o agente se limita a atendimento, vendas, agendamentos e qualificação.</p></div>
+          </details>
+          <details>
+            <summary><h3>Fico preso a você?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p class="faq-lead">Não. As contas e as credenciais ficam no nome da sua empresa.</p><p>Entrego os fluxos exportados e um manual de operação. Se um dia você quiser trocar de fornecedor ou levar a operação para dentro de casa, outro técnico continua daí.</p></div>
+          </details>
+          <details>
+            <summary><h3>Por que n8n?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p class="faq-lead">Porque ele pode rodar no seu próprio servidor, mostra o que cada etapa fez e cobra por execução completa.</p><p>Para casos simples existem ferramentas mais simples, e se o seu for um deles eu aviso. O n8n compensa quando a operação cresce e você precisa saber o que rodou, quando e o que aconteceu se algo falhou.</p></div>
+          </details>
+          <details>
+            <summary><h3>Você trabalha com agências?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p class="faq-lead">Sim, de duas formas: indicação ou white label.</p><p>Se você tem clientes pedindo bots, CRM ou atribuição de vendas, me chame no WhatsApp e eu passo as condições.</p></div>
+          </details>
+          <details>
+            <summary><h3>Como funciona o pagamento para quem está no Brasil?</h3><span class="faq-sign" aria-hidden="true"></span></summary>
+            <div class="faq-body"><p class="faq-lead">Por transferência internacional, com fatura em dólares.</p><p>Os valores aparecem em reais como referência. Na proposta explico os tributos de importação de serviço que ficam por sua conta. Trabalho no mesmo fuso horário de Brasília.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="section section--contacto" id="contacto" aria-labelledby="contacto-title">
+      <div class="wrap closer reveal">
+        <span class="kicker">Diagnóstico grátis</span>
+        <h2 id="contacto-title">30 minutos e você sai com um plano.</h2>
+        <p class="closer-lead">Você me conta como é o atendimento hoje e o que se repete todo dia. Eu digo o que vale automatizar primeiro, quanto custa e quanto tempo leva. Se não valer a pena, também digo.</p>
+        <div class="closer-cta">
+          <a class="cta cta--solid" href="https://cal.com/franco-hanemann-agenda/30min" target="_blank" rel="noopener"><span class="cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/><path d="M8.5 14.5l2.2 2.2 4-4.4"/></svg></span><span class="cta-txt"><b>Agendar diagnóstico</b></span></a>
+          <a class="cta" href="https://wa.me/5492235351875?text=Ol%C3%A1%20Franco%2C%20vi%20seu%20site%20e%20quero%20automatizar%20o%20atendimento%20no%20WhatsApp" target="_blank" rel="noopener"><span class="cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2.4c-5.3 0-9.6 4.3-9.6 9.6 0 1.7.45 3.34 1.3 4.8L2.4 21.6l4.94-1.3a9.55 9.55 0 0 0 4.7 1.2h.01c5.3 0 9.6-4.3 9.6-9.6 0-2.57-1-4.98-2.81-6.8a9.54 9.54 0 0 0-6.8-2.7Zm0 1.6c2.13 0 4.13.83 5.64 2.34a7.95 7.95 0 0 1 2.33 5.66c0 4.41-3.59 8-8 8a7.94 7.94 0 0 1-4.04-1.1l-.29-.17-2.93.77.78-2.86-.19-.3a7.93 7.93 0 0 1-1.22-4.24c0-4.41 3.59-8 8-8Zm-2.6 3.96c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.39-.4-.54-.41h-.46Z"/></svg></span><span class="cta-txt"><b>WhatsApp</b></span></a>
+          <button class="cta" type="button" data-cta="bot" aria-haspopup="dialog" aria-controls="chat"><span class="cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.55L3 20.5l1.45-5.05A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg></span><span class="cta-txt"><b>Testar o bot</b></span></button>
+        </div>
+        <p class="closer-meta">E-mail: <a href="mailto:franco@hanemann.ar">franco@hanemann.ar</a> · Trajetória: <a href="https://cv.hanemann.ar" target="_blank" rel="noopener">cv.hanemann.ar</a> · <a href="https://www.linkedin.com/in/franco-hanemann-2a1a36a9" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <span class="foot-brand"><span class="brand-mark sm" aria-hidden="true">H</span> Franco E. Hanemann</span>
+      <p class="foot-meta">Mar del Plata, Argentina · Agentes de WhatsApp com IA · Automação com n8n</p>
+      <ul class="foot-links" aria-label="Idioma"><li><a href="../" hreflang="es-AR" lang="es-AR">Español (Argentina)</a></li><li><a href="../es/" hreflang="es" lang="es">Español</a></li><li><a href="../pt/" hreflang="pt-BR" lang="pt-BR" aria-current="page">Português</a></li><li><a href="../pt/privacidade/">Privacidade</a></li></ul>
+      <p class="foot-meta">© <span id="year">2026</span> · Franco E. Hanemann · <span class="foot-updated">Atualizado em outubro de 2026</span></p>
+    </div>
+  </footer>
+  <button class="bot-fab" id="bot-fab" type="button" aria-haspopup="dialog" aria-controls="chat" aria-label="Abrir o chat com o bot do Franco">
+    <span class="bot-fab-dot" aria-hidden="true"></span>
+    Falar com o bot
+  </button>
+  <div class="chat-scrim" id="chat-scrim" hidden></div>
+  <aside class="chat" id="chat" role="dialog" aria-modal="true" aria-labelledby="chat-title" hidden>
+    <header class="chat-head">
+      <span class="chat-avatar" aria-hidden="true">H</span>
+      <div class="chat-id">
+        <p id="chat-title">Bot do Franco</p>
+        <small><span class="chat-live"></span> Online · demo ao vivo</small>
+      </div>
+      <button class="chat-x" id="chat-x" type="button" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </header>
+    <div class="chat-body" id="chat-body" aria-live="polite">
+      <div class="msg msg--bot"><p>Olá! Sou o bot do Franco, feito com a mesma base que ele usa nos projetos. Pergunte o que dá para automatizar, quanto custa ou como funciona o piloto.</p></div>
+      <div class="chat-chips" id="chat-chips">
+        <button type="button" data-q="O que dá para automatizar no meu negócio?">O que dá para automatizar no meu negócio?</button>
+        <button type="button" data-q="Quanto custa?">Quanto custa?</button>
+        <button type="button" data-q="Como funciona o piloto em modo sombra?">Como funciona o piloto em modo sombra?</button>
+        <button type="button" class="chip-action" data-q="Quero agendar o diagnóstico">Quero agendar o diagnóstico</button>
+      </div>
+    </div>
+    <form class="chat-input" id="chat-form" autocomplete="off">
+      <input id="chat-text" type="text" placeholder="Escreva sua mensagem…" aria-label="Mensagem" maxlength="800" />
+      <button type="submit" aria-label="Enviar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12 19 5l-5 14-3-6-6-1Z"/></svg></button>
+    </form>
+    <small class="chat-note">Bot real em n8n. Ao escrever, você aceita a <a href="../pt/privacidade/">política de privacidade</a>, inclusive o uso de fornecedores nos EUA.</small>
+  </aside>
+  <script id="site-config" type="application/json">{"webhook": "https://n8n.srv934218.hstgr.cloud/webhook/asistente-branding", "token": "fh-web-2026-a8c3e91f74d2b560", "lang": "pt-BR", "error": "A conexão caiu. Tente de novo em instantes ou me chame no WhatsApp."}</script>
+  <script src="../js/site.js?v=b676a4ea55" defer></script>
+</body>
+</html>

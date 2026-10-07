@@ -14,7 +14,7 @@ package-lock.json
 yarn.lock
 
 # Build output (si en el futuro)
-dist/
+# dist/ se versiona: es exactamente lo que se sube al hosting
 build/
 .netlify/
 
